@@ -1,3 +1,41 @@
+@font-face {
+    font-family: medium;
+    src: url(../assets/fonts/Nunito-Medium.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(../assets/fonts/Nunito-Light.ttf);
+}
 body{
-    background-color: rgb(246, 234, 211);
+    background-color: rgb(212, 212, 212);
+}
+.container{
+    min-width: 600px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header{
+    background-color: rgb(88, 169, 255);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header__h1{
+    font-family: medium;
+    color: #ffffff;
+    padding: 40px 40px;
+    font-size: 3rem;
+}
+.confi{
+    margin: 0px 40px;
+    color: #ffffff;
+}
+.nombre{
+    font-size: 2rem;
+    font-family: light;
+}
+.img__avatar{
+    width: 70px;
 }
