@@ -11,10 +11,10 @@ const name__button = document.getElementById("name__button");
 const selectName = (event) =>{
 
     if(name__input.value == ""){
-        text__error.style.display = "block"
+        text__error.classList.add("displayblock")
     }else{
-        nombre.style.display="block";
-        text__error.style.display = "none"
+        nombre.classList.add("displayblock")
+        text__error.classList.remove("displaynone")
         span__name.textContent = name__input.value
     }
 }
@@ -25,8 +25,9 @@ name__button.addEventListener("click", selectName)
 const selectAvatar = (event) =>{
 
     let element = event.target;
-    img__perfil.style.display = "block"
+    
     if(element.nodeName === "IMG"){
+        img__perfil.classList.remove("displaynone")
         img__perfil.src = element.src
     }
 }
