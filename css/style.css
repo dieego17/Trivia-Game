@@ -6,8 +6,12 @@
     font-family: light;
     src: url(../assets/fonts/Nunito-Light.ttf);
 }
+@font-face {
+    font-family: arco;
+    src: url(../assets/fonts/ARCO.ttf);
+}
 body{
-    background-color: rgb(212, 212, 212);
+    background-image: url(../assets/images/fondo.jpg);
 }
 .container{
     min-width: 600px;
@@ -17,25 +21,41 @@ body{
 }
 
 .header{
-    background-color: rgb(88, 169, 255);
+    background-color: #ffc5ffb1;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 .header__h1{
-    font-family: medium;
+    font-family: arco;
     color: #ffffff;
-    padding: 40px 40px;
-    font-size: 3rem;
+    font-size: 5rem;
+}
+.header__letra1{
+    color: #36f3b1;
+}
+.header__letra2{
+    color: #d036f3;
 }
 .confi{
     margin: 0px 40px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .nombre{
     font-size: 2rem;
-    font-family: light;
+    font-family: arco;
+    color: #d036f3;
 }
-.img__avatar{
-    width: 70px;
+.img__perfil{
+    width: 100px;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+}
+.display{
+    display: none;
 }
