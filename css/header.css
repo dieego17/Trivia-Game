@@ -30,6 +30,9 @@
     font-family: arco;
     color: #d036f3;
 }
+.name__span{
+    color: #36f3b1;
+}
 .img__perfil{
     width: 100px;
     color: #ffffff;

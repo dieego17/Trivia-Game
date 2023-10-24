@@ -133,3 +133,9 @@ body{
     background-color: #2dcde5;
     color: #d4ceaab1;
 }
+
+/* ERROR */
+.text__error{
+    color: #e1473f;
+    font-family: arco;
+}
