@@ -1,0 +1,40 @@
+.header{
+    background-color: #ffc5ffb1;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__h1{
+    font-family: arco;
+    color: #ffffff;
+    font-size: 5rem;
+}
+.header__letra1{
+    color: #36f3b1;
+}
+.header__letra2{
+    color: #d036f3;
+}
+.confi{
+    margin: 0px 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nombre{
+    font-size: 2rem;
+    font-family: arco;
+    color: #d036f3;
+}
+.img__perfil{
+    width: 100px;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+}
+.display{
+    display: none;
+}

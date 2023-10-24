@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivial-Rubio</title>
+    <title>TriviaRubio.com</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -16,16 +16,48 @@
                 <span class="header__letra2">Rubio</span>
             </h1> 
             <div class="confi">
-                <p class="nombre " id="nombre">Name:
+                <p class="nombre display" id="nombre">Nombre:
                     <span class="name__span" id="span__name">
 
                     </span>
                 </p>
-                <img class="img__perfil " id="img__perfil" src="./assets/images/perfilcolor.png" alt="">
+                <img class="img__perfil display" id="img__perfil" src="./assets/images/perfilcolor.png" alt="">
             </div>
         </header>
         <main class="main" id="main">
+            <section class="config__juego" id="config">
+                <article class="nombre__jugador" id="nombre__jugador">
+                    <h2 class="nombre__h2">Introduce tu nombre</h2>
+                    <div class="config__container">
+                        <input class="name__input" type="text" name="nombre" placeholder="Tom Holland" id="name__input">
+                        <button class="name__button" id="name__button">Añadir</button>
+                    </div>
+                </article>
+                <article class="avatar__jugador" id="avatar__jugador">
+                    <h2 class="nombre__h2">Escoge tu avatar</h2>
+                    <div class="config__avatar" id="config__avatar">
+                        <div class="column1__avatar" id="column1__avatar">
+                            <img class="config__img" src="./assets/images/avatares/capitanamerica.png" alt="">
+                            <img class="config__img" src="./assets/images/avatares/spiderman.png" alt="">
+                            <img class="config__img" src="./assets/images/avatares/loki.png" alt="">
+                        </div>
+                        <div class="column2__avatar" id="column2__avatar">
+                            <img class="config__img" src="./assets/images/avatares/thor.png" alt="">
+                            <img class="config__img" src="./assets/images/avatares/ironman.png" alt="">
+                            <img class="config__img" src="./assets/images/avatares/wolverine.png" alt="">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="button__juego">
+                <button class="button__jugar" id="button__jugar">JUGAR</button>
+            </section>
+            <section class="eleccion__preguntas display" id="eleccion__preguntas">
 
+            </section>
+            <section class="juego display" id="juego">
+
+            </section>
         </main>
         <footer class="footer" id="footer">
 

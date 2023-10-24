@@ -3,7 +3,7 @@
     src: url(../assets/fonts/Nunito-Medium.ttf);
 }
 @font-face {
-    font-family: light;
+    font-family: liht;
     src: url(../assets/fonts/Nunito-Light.ttf);
 }
 @font-face {
@@ -19,43 +19,117 @@ body{
     margin: 0 auto;
     width: 100%;
 }
-
-.header{
-    background-color: #ffc5ffb1;
-    text-align: center;
+/* configuracion juego */
+.config__juego{
+    border-radius: 10px;
+    background-color: #36f3b1b1;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px 0px;
+    width: 100%;
 }
-.header__h1{
+.nombre__jugador{
+    background-color: #f0f6b9bc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 50px 0px;
+    width: 50%;
+    height: 250px;
+}
+.nombre__h2{
     font-family: arco;
-    color: #ffffff;
-    font-size: 5rem;
+    color: #2dcde5;
+    font-size: 2.5rem;
+    padding: 0px 30px;
+    text-align: center;
 }
-.header__letra1{
-    color: #36f3b1;
-}
-.header__letra2{
-    color: #d036f3;
-}
-.confi{
-    margin: 0px 40px;
-    color: #ffffff;
+.config__container{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.nombre{
-    font-size: 2rem;
+.name__input{
+    border-radius: 5px;
+    border: none;
+    background: none;
+    border: 2px solid #2dcde5;
+    margin: 0px 10px;
+    width: 400px;
+    height: 40px;
+    color: #2dcde5;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: liht;
+}
+.name__input:focus{
+    outline: none;
+    background-color: #2dcde5;
+    color: #f0f6b9bc;
+}
+.name__input::placeholder{
+    color: #2dcde5;
+    text-align: center;
+    outline: none;
+    font-family: liht;
+}
+.name__button{
+    border-radius: 5px;
+    margin: 10px 0px;
+    width: 408px;
+    height: 50px;
+    border: none;
     font-family: arco;
-    color: #d036f3;
+    background: none;
+    border: 2px solid #2dcde5;
+    color: #2dcde5;
+    font-size: 1.4rem;
 }
-.img__perfil{
+.name__button:hover{
+    background-color: #2dcde5;
+    color: #f0f6b9bc;
+}
+
+/* AVATAR */
+.avatar__jugador{
+    background-color: #aeffffaf;
+    border-radius: 10px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+}
+.config__avatar{
+    padding: 0px 30px;
+}
+.config__img{
     width: 100px;
-    color: #ffffff;
-    padding: 0px 0px 20px;
+    padding: 5px 10px;
+    transition: transform 0.3s;
 }
-.display{
-    display: none;
+.config__img:hover {
+    transform: scale(1.1) translateY(-5px);
+  }
+
+/* BUTTON JUGAR */
+.button__juego{
+    background-color: #d4ceaab1;
+    border-radius: 10px;
+    padding: 10px;
+}
+.button__jugar{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background: none;
+    font-family: arco;
+    font-size: 2rem;
+    border: 2px solid #2dcde5;
+    color: #2dcde5;
+}
+.button__jugar:hover{
+    background-color: #2dcde5;
+    color: #d4ceaab1;
 }
