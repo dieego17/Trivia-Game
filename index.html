@@ -6,6 +6,8 @@
     <title>TriviaRubio.com</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/juego.css">
+    <link rel="stylesheet" href="./css/eleccion_preguntas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -27,7 +29,7 @@
             </div>
         </header>
         <main class="main" id="main">
-            <!-- Configuracion juego -->
+            <!-- CONFIGURACIÓN JUEGO -->
             <section class="config__juego" id="config">
                 <article class="nombre__jugador" id="nombre__jugador">
                     <h2 class="nombre__h2">Introduce tu usuario</h2>
@@ -44,11 +46,29 @@
                     </div>
                 </article>
             </section>
-            <section class="button__juego">
-                <button class="button__jugar" id="button__jugar">JUGAR</button>
+            <!-- BOTÓN PARA AVANZAR -->
+            <section class="button__juego" id="button__preguntas">
+                <button class="button__jugar" id="button__pregunta">Siguiente</button>
             </section>
-            <section class="eleccion__preguntas display" id="eleccion__preguntas">
-
+            <!-- ELECCIÓN RIVAL Y PREGUNTAS -->
+            <section class="eleccion__preguntas displaynone" id="eleccion__preguntas">
+                <h2 class="eleccion__h2">Escoger oponente</h2>
+                <article class="article__eleccion" id="article__eleccion">
+                    <div class="div__oponentes">
+                        <h3 class="h3__oponentes">Oponente Aleatorio</h3>
+                        <i class="random fa-solid fa-shuffle" id="random"></i>
+                    </div>
+                    <div class="div__oponentes">
+                        <h3 class="h3__oponentes">THANOS</h3>
+                        <img class="img__thanos" id="img__thanos" src="./assets/images/thanos2.png.svg" alt="">
+                    </div>
+                </article>
+                
+                
+            </section>
+            <!-- BOTÓN COMENZAR JUEGO -->
+            <section class="button__juego displaynone" id="button__juego">
+                <button class="button__jugar" id="button__jugar">Jugar</button>
             </section>
             <section class="juego display" id="juego">
 

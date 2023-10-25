@@ -1,0 +1,39 @@
+.eleccion__preguntas{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0px 0px 20px;
+
+}
+.eleccion__h2{
+    color: #8247B1;
+    font-family: arco;
+    font-size: 3rem;
+    text-align: center;
+}
+.article__eleccion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div__oponentes{
+    text-align: center;
+}
+.h3__oponentes{
+    color: #000;
+    font-size: 2rem;
+    font-family: arco;
+}
+.random{
+    font-size: 7rem;
+    border: 2px solid #8247B1;
+    background-color: #ffffff;
+    color: #8247B1;
+    padding: 40px;
+    border-radius: 100px;
+}
+.img__thanos{
+    border: 2px solid #8247B1;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 100px;
+}

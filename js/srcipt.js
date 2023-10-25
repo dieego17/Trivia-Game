@@ -13,6 +13,7 @@ const avatar = [
 ]
 const config__avatar = document.getElementById("config__avatar")
 const img__perfil = document.getElementById("img__perfil")
+const config = document.getElementById("config");
 
 const nombre = document.getElementById("nombre");
 const text__error = document.getElementById("text__error")
@@ -20,7 +21,12 @@ const span__name = document.getElementById("span__name")
 const name__input = document.getElementById("name__input");
 const name__button = document.getElementById("name__button");
 
+const button__jugar = document.getElementById("button__jugar");
+const button__juego = document.getElementById("button__juego");
 
+const eleccion__preguntas = document.getElementById("eleccion__preguntas")
+const button__pregunta = document.getElementById("button__pregunta");
+const button__preguntas = document.getElementById("button__preguntas");
 
 //escoger nombre
 const selectName = (event) =>{
@@ -66,3 +72,18 @@ const loadImg = (event) =>{
 }
 
 document.addEventListener("DOMContentLoaded", loadImg)
+
+const loadGame = (event) =>{
+
+    if(img__perfil.src != "./assets/images/perfilcolor.png"){
+        config.classList.add("displaynone");
+        eleccion__preguntas.classList.add("displayblock")
+        
+        button__preguntas.classList.add("displaynone")
+        button__juego.classList.remove("displaynone")
+    }
+    
+
+}
+
+button__pregunta.addEventListener("click", loadGame)
