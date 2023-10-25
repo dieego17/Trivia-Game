@@ -10,43 +10,37 @@
 </head>
 <body>
     <div class="container">
+        <!-- Cabecera juego -->
         <header class="header" id="header">
             <h1 class="header__h1">
                 <span class="header__letra1">Trivial</span>
                 <span class="header__letra2">Rubio</span>
             </h1> 
             <div class="confi">
-                <p class="nombre displaynone" id="nombre">Nombre:
+                <p class="nombre displaynone" id="nombre">Usuario:
                     <span class="name__span" id="span__name">
-
+                        <!-- Aquí cargo el nombre del usuario -->
                     </span>
                 </p>
+                <!-- Aqui cargo el avatar elegio -->
                 <img class="img__perfil displaynone" id="img__perfil" src="./assets/images/perfilcolor.png" alt="">
             </div>
         </header>
         <main class="main" id="main">
+            <!-- Configuracion juego -->
             <section class="config__juego" id="config">
                 <article class="nombre__jugador" id="nombre__jugador">
-                    <h2 class="nombre__h2">Introduce tu nombre</h2>
+                    <h2 class="nombre__h2">Introduce tu usuario</h2>
                     <div class="config__container">
-                        <p class="text__error displaynone" id="text__error">Introduce tu nombre</p>
-                        <input class="name__input" type="text" name="nombre" placeholder="Tom Holland" id="name__input">
+                        <p class="text__error displaynone" id="text__error">Introduce tu usuario</p>
+                        <input class="name__input" type="text" name="nombre" placeholder="TomHolland777" id="name__input">
                         <button class="name__button" id="name__button">Añadir</button>
                     </div>
                 </article>
                 <article class="avatar__jugador" id="avatar__jugador">
                     <h2 class="nombre__h2">Escoge tu avatar</h2>
                     <div class="config__avatar" id="config__avatar">
-                        <div class="column1__avatar" id="column1__avatar">
-                            <img class="config__img" src="./assets/images/avatares/capitanamerica.png" alt="">
-                            <img class="config__img" src="./assets/images/avatares/spiderman.png" alt="">
-                            <img class="config__img" src="./assets/images/avatares/loki.png" alt="">
-                        </div>
-                        <div class="column2__avatar" id="column2__avatar">
-                            <img class="config__img" src="./assets/images/avatares/thor.png" alt="">
-                            <img class="config__img" src="./assets/images/avatares/ironman.png" alt="">
-                            <img class="config__img" src="./assets/images/avatares/wolverine.png" alt="">
-                        </div>
+                        <!-- Aquí cargo las imagenes de los avatares -->
                     </div>
                 </article>
             </section>

@@ -1,10 +1,10 @@
 .header{
-    background-color: #ffc5ffb1;
     border-radius: 10px;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #ffffff;
 }
 .header__h1{
     font-family: arco;
@@ -12,10 +12,10 @@
     font-size: 5rem;
 }
 .header__letra1{
-    color: #36f3b1;
+    color: #8247B1;
 }
 .header__letra2{
-    color: #d036f3;
+    color: #000;
 }
 .confi{
     margin: 0px 40px;
@@ -23,15 +23,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 .nombre{
     font-size: 2rem;
     font-family: arco;
-    color: #d036f3;
+    color: #8247B1;
 }
 .name__span{
-    color: #36f3b1;
+    color: #000;
 }
 .img__perfil{
     width: 100px;

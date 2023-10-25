@@ -11,35 +11,34 @@
     src: url(../assets/fonts/ARCO.ttf);
 }
 body{
-    background-image: url(../assets/images/fondo.jpg);
+    background-image: url(../assets/images/fondomorado.jpg);
 }
 .container{
     min-width: 600px;
     max-width: 1400px;
     margin: 0 auto;
     width: 100%;
+    border-radius: 10px;
 }
 /* configuracion juego */
 .config__juego{
     border-radius: 10px;
-    background-color: #36f3b1b1;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     margin: 20px 0px;
     width: 100%;
+    background-color: #ffffff;
 }
 .nombre__jugador{
-    background-color: #f0f6b9bc;
     border-radius: 10px;
-    margin: 10px;
-    padding: 50px 0px;
     width: 50%;
     height: 250px;
 }
 .nombre__h2{
     font-family: arco;
-    color: #2dcde5;
+    color: #8247B1;
     font-size: 2.5rem;
     padding: 0px 30px;
     text-align: center;
@@ -55,22 +54,22 @@ body{
     border-radius: 5px;
     border: none;
     background: none;
-    border: 2px solid #2dcde5;
+    border: 2px solid #8247B1;
     margin: 0px 10px;
     width: 400px;
     height: 40px;
-    color: #2dcde5;
+    color: #8247B1;
     font-size: 1.4rem;
     text-align: center;
     font-family: liht;
 }
 .name__input:focus{
     outline: none;
-    background-color: #2dcde5;
-    color: #f0f6b9bc;
+    background-color: #8247B1;
+    color: #ffffff;
 }
 .name__input::placeholder{
-    color: #2dcde5;
+    color: #8247B1;
     text-align: center;
     outline: none;
     font-family: liht;
@@ -83,25 +82,28 @@ body{
     border: none;
     font-family: arco;
     background: none;
-    border: 2px solid #2dcde5;
-    color: #2dcde5;
+    border: 2px solid #8247B1;
+    color: #8247B1;
     font-size: 1.4rem;
 }
 .name__button:hover{
-    background-color: #2dcde5;
-    color: #f0f6b9bc;
+    background-color: #8247B1;
+    color: #ffffff;
 }
 
 /* AVATAR */
 .avatar__jugador{
-    background-color: #aeffffaf;
     border-radius: 10px;
     margin: 10px;
-    width: 50%;
+    width: 30%;
     text-align: center;
 }
 .config__avatar{
     padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .config__img{
     width: 100px;
@@ -114,9 +116,9 @@ body{
 
 /* BUTTON JUGAR */
 .button__juego{
-    background-color: #d4ceaab1;
     border-radius: 10px;
     padding: 10px;
+    background-color: #ffffff;
 }
 .button__jugar{
     width: 100%;
@@ -126,16 +128,16 @@ body{
     background: none;
     font-family: arco;
     font-size: 2rem;
-    border: 2px solid #2dcde5;
-    color: #2dcde5;
+    border: 2px solid #8247B1;
+    color: #8247B1;
 }
 .button__jugar:hover{
-    background-color: #2dcde5;
-    color: #d4ceaab1;
+    background-color: #8247B1;
+    color: #ffffff;
 }
 
 /* ERROR */
 .text__error{
-    color: #e1473f;
+    color: #d14334;
     font-family: arco;
 }
