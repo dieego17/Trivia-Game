@@ -28,6 +28,10 @@ const eleccion__preguntas = document.getElementById("eleccion__preguntas")
 const button__pregunta = document.getElementById("button__pregunta");
 const button__preguntas = document.getElementById("button__preguntas");
 
+//variable para ver si existe el nombre y el avatar
+let existeName
+let existeAvatar
+
 //escoger nombre
 const selectName = (event) =>{
 
@@ -39,6 +43,7 @@ const selectName = (event) =>{
         nombre.classList.add("displayblock")
         text__error.classList.remove("displayblock")
         span__name.textContent = name__input.value
+        existeName = span__name.textContent;
     }
 }
 
@@ -52,12 +57,13 @@ const selectAvatar = (event) =>{
     if(element.nodeName === "IMG"){
         img__perfil.classList.remove("displaynone")
         img__perfil.src = element.src
+        existeAvatar = img__perfil.src 
     }
 }
 
 config__avatar.addEventListener("click", selectAvatar);
 
-
+//cargar los avatares
 const loadImg = (event) =>{
 
     for(let i = 0; i<6; i++){
@@ -73,9 +79,10 @@ const loadImg = (event) =>{
 
 document.addEventListener("DOMContentLoaded", loadImg)
 
+//esconder la configuracion y pasar a la siguiente pantalla
 const loadGame = (event) =>{
 
-    if(img__perfil.src != "./assets/images/perfilcolor.png"){
+    if(existeAvatar && existeName){
         config.classList.add("displaynone");
         eleccion__preguntas.classList.add("displayblock")
         
