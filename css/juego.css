@@ -66,6 +66,8 @@
     background-color: #ffffff;
     margin: 20px 0px;
     border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 .question__cont{
     color: #8247B1;
@@ -75,6 +77,7 @@
 .text__question{
     font-size: 2rem;
     font-family: robotoRegular;
+    width: 80%;
 }
 .button__answers{
     border: 1px solid grey;
@@ -84,9 +87,23 @@
     font-family: robotoRegular;
     border-radius: 10px;
     border: 2px solid #8247B1;
-    color: #8247B1;                          
+    color: #8247B1;           
+    width:60%;           
+    background-color: #ffffff;    
 }
 .button__answers:hover{
     background-color: #8247B1;
+    color: #ffffff;
+}
+.comprobar{
+    background-color: #8247B1;
+    color: #ffffff;
+}
+.acierto{
+    background-color: #44ff00;
+    color: #ffffff;
+}
+.error{
+    background-color: #d14334;
     color: #ffffff;
 }

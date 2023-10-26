@@ -11,6 +11,8 @@ const avatar = [
     "Nick Fury",
     "viuda negra"
 ]
+
+
 const config__avatar = document.getElementById("config__avatar")
 const img__perfil = document.getElementById("img__perfil")
 const config = document.getElementById("config");
@@ -159,7 +161,6 @@ const validateOponent = (event) =>{
             //si no, añadira un oponente aleatorio quitando al avatar
             //que haya elegido el jugador
         }else if(oponenteSelecc.nodeName === "I"){
-            console.log(existeAvatar)
             let oponenteAle = Math.floor(Math.random()*avatar.length)
             if(img__perfil.src != img__oponente.src){
                 img__oponente.src = "./assets/images/avatares/"+avatar[oponenteAle]+".png"
@@ -172,5 +173,7 @@ const validateOponent = (event) =>{
 }
 button__jugar.addEventListener("click", validateOponent)
 
+
+  
 
 
