@@ -35,6 +35,7 @@ body{
     border-radius: 10px;
     width: 50%;
     height: 250px;
+    margin: 10px 0px 0px;
 }
 .nombre__h2{
     font-family: arco;
@@ -140,4 +141,7 @@ body{
 .text__error{
     color: #d14334;
     font-family: arco;
+}
+.error{
+    border: 6px solid #d14334;
 }
