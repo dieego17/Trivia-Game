@@ -51,6 +51,28 @@
             </section>
             <!-- ELECCIÓN RIVAL Y PREGUNTAS -->
             <section class="eleccion__preguntas displaynone" id="eleccion__preguntas">
+                <h2 class="eleccion__h2">REGLAS</h2>
+                <p class="eleccion__reglas">
+                    <strong class="title__eleccion">Escoge a tu Oponente:</strong> Al iniciar el juego, debes decidir 
+                    si deseas jugar para derrotar a Thanos o a un oponente 
+                    aleatorio. Thanos es un enemigo extremadamente poderoso
+                    , por lo que ten en cuenta que enfrentarlo será un 
+                    desafío mucho mayor. <br><br>
+                    <strong class="title__eleccion">Categoría de la Primera Pregunta:</strong> Una vez hayas elegido 
+                    a tu oponente, se seleccionará aleatoriamente la 
+                    categoría de la primera pregunta. Las siguientes 
+                    secciones del juego se determinarán de manera aleatoria también.
+                    Puede ser sobre uno de los siguientes temas: historia, ciencia, 
+                    deporte, entretenimiento, arte o geografía.
+                    Debes estar preparado para responder 
+                    preguntas de diversas áreas de conocimiento.<br><br>
+                    <strong class="title__eleccion">Objetivo del Juego:</strong> El objetivo del juego es responder 
+                    correctamente a las seis categorías. Cada respuesta correcta te acerca a 
+                    la victoria.<br><br>
+                    <strong class="title__eleccion">Vidas:</strong> Comienzas el juego con tres vidas. Si respondes 
+                    incorrectamente a una sección, perderás una vida. 
+                    Si pierdes las tres vidas, habrás perdido el juego.
+                </p>
                 <h2 class="eleccion__h2">Escoger oponente</h2>
                 <article class="article__eleccion" id="article__eleccion">
                     <div class="div__oponentes">
@@ -62,15 +84,30 @@
                         <img class="img__thanos" id="img__thanos" src="./assets/images/thanos2.png.svg" alt="">
                     </div>
                 </article>
-                
-                
             </section>
             <!-- BOTÓN COMENZAR JUEGO -->
             <section class="button__juego displaynone" id="button__juego">
                 <button class="button__jugar" id="button__jugar">Jugar</button>
             </section>
-            <section class="juego display" id="juego">
-
+            <section class="juego displaynone" id="juego">
+                <article class="article__vidas">
+                    <div class="div__vidas">
+                        <h3 class="vidas__h3">OPONENTE</h3>
+                        <p class="nombre__oponente displaynone" id="nombre__oponente"></p>
+                        <img class="img__oponente displaynone" id="img__oponente" src="./assets/images/perfilcolor.png" alt="">
+                    </div>
+                    <div class="div__vidas">
+                        <h3 class="vidas__h3">VIDAS</h3>
+                        <div class="heart__vida">
+                            <i class="heart__vidas1 fa-solid fa-heart"></i>
+                            <i class="heart__vidas2 fa-solid fa-heart"></i>
+                            <i class="heart__vidas3 fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="button__juego displaynone" id="button__comprobar">
+                <button class="button__jugar" id="button__comprobar">Comprobar</button>
             </section>
         </main>
         <footer class="footer" id="footer">
@@ -78,5 +115,6 @@
         </footer>
     </div>
     <script src="./js/srcipt.js"></script>
+    <script src="./js/preguntas.js"></script>
 </body>
 </html>

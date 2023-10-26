@@ -10,6 +10,10 @@
     font-family: arco;
     src: url(../assets/fonts/ARCO.ttf);
 }
+@font-face {
+    font-family: robotoRegular;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
 body{
     background-image: url(../assets/images/fondomorado.jpg);
 }

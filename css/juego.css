@@ -1,0 +1,36 @@
+.juego{
+    background-color: #ffffff;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.article__vidas{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.img__oponente{
+    width: 150px;
+}
+.vidas__h3{
+    text-align: center;
+    font-size: 3rem;
+    font-family: arco;
+    color: #8247B1;
+}
+.heart__vidas1,
+.heart__vidas2,
+.heart__vidas3{
+    font-size: 60px;
+    color: #d14334;
+}
+.nombre__oponente{
+    color: #000;
+    font-family: arco;
+    font-size: 2rem;
+}
+.broken__vidas1,
+.broken__vidas2,
+.broken__vidas3{
+    font-size: 60px;
+    color: #000;
+}

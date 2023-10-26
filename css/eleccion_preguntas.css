@@ -14,9 +14,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0px 50px;
 }
 .div__oponentes{
     text-align: center;
+    margin: 0px 0px 20px;
 }
 .h3__oponentes{
     color: #000;
@@ -40,4 +42,14 @@
 .background-purple{
     background-color: #8247B1;
     color: #ffffff;
+}
+.eleccion__reglas{
+    text-align: justify;
+    padding: 0px 100px;
+    font-size: 1.7rem;
+    font-family: robotoRegular;
+    color: #8247B1;
+}
+.title__eleccion{
+    color: #000;
 }

@@ -1,15 +1,15 @@
 const avatar = [
-    "capitanamerica",
-    "spiderman",
+    "Capitán América",
+    "spider-man",
     "loki",
     "thor",
-    "ironman",
+    "iron man",
     "wolverine",
     "deadpool",
-    "gru",
+    "groot",
     "hulk",
-    "nickfuria",
-    "scarlet"
+    "Nick Fury",
+    "viuda negra"
 ]
 const config__avatar = document.getElementById("config__avatar")
 const img__perfil = document.getElementById("img__perfil")
@@ -27,6 +27,11 @@ const button__juego = document.getElementById("button__juego");
 const eleccion__preguntas = document.getElementById("eleccion__preguntas")
 const button__pregunta = document.getElementById("button__pregunta");
 const button__preguntas = document.getElementById("button__preguntas");
+
+//juego
+const juego = document.getElementById("juego")
+const img__oponente = document.getElementById("img__oponente")
+const nombre__oponente = document.getElementById("nombre__oponente")
 
 //variable para ver si existe el nombre y el avatar
 let existeName
@@ -109,18 +114,60 @@ const loadGame = (event) =>{
 
 button__pregunta.addEventListener("click", loadGame)
 
+let oponenteSelecc
 //seleccionar el oponente contra quien juegas
 const selectOponent = (event) =>{
-    console.log(event)
+    let avatarAle = Math.floor(Math.random()*avatar.length);
+
     let element = event.target;
     if(element.nodeName === "IMG"){
       img__thanos.classList.add("background-purple")
       random.classList.remove("background-purple")
+      oponenteSelecc = element
+      article__eleccion.classList.remove("error")
     }else if(element.nodeName === "I"){
         img__thanos.classList.remove("background-purple")
         random.classList.add("background-purple")
+        oponenteSelecc = element
+        article__eleccion.classList.remove("error")
     }
-  
 }
-  
 article__eleccion.addEventListener("click", selectOponent)
+
+//validar eleccion de oponente
+const validateOponent = (event) =>{
+
+    if(!oponenteSelecc){
+        article__eleccion.classList.add("error")
+    }else{
+        eleccion__preguntas.classList.remove("displayblock")
+        button__jugar.classList.remove("displaybock")
+        eleccion__preguntas.classList.add("displaynone")
+        button__juego.classList.add("displaynone")
+        juego.classList.remove("displaynone")
+        juego.classList.add("displaybock")
+        //si escoge a thanos se añadira a thanos en la siguiente pantalla
+        if(oponenteSelecc.nodeName === "IMG"){
+            img__oponente.src = oponenteSelecc.src
+            nombre__oponente.textContent = "THANOS"
+            img__oponente.classList.remove("displaynone")
+            nombre__oponente.classList.remove("displaynone")
+
+            //si no, añadira un oponente aleatorio quitando al avatar
+            //que haya elegido el jugador
+        }else if(oponenteSelecc.nodeName === "I"){
+            console.log(existeAvatar)
+            let oponenteAle = Math.floor(Math.random()*avatar.length)
+            if(img__perfil.src != img__oponente.src){
+                img__oponente.src = "./assets/images/avatares/"+avatar[oponenteAle]+".png"
+                nombre__oponente.textContent = avatar[oponenteAle]
+                img__oponente.classList.remove("displaynone")
+                nombre__oponente.classList.remove("displaynone")
+            }
+        }
+    }
+}
+button__jugar.addEventListener("click", validateOponent)
+
+
+
