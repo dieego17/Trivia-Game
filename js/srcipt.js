@@ -32,6 +32,7 @@ const button__preguntas = document.getElementById("button__preguntas");
 const juego = document.getElementById("juego")
 const img__oponente = document.getElementById("img__oponente")
 const nombre__oponente = document.getElementById("nombre__oponente")
+const button__compruebo = document.getElementById("button__compruebo")
 
 //variable para ver si existe el nombre y el avatar
 let existeName
@@ -146,12 +147,14 @@ const validateOponent = (event) =>{
         button__juego.classList.add("displaynone")
         juego.classList.remove("displaynone")
         juego.classList.add("displaybock")
+        button__compruebo.classList.remove("displaynone")
         //si escoge a thanos se añadira a thanos en la siguiente pantalla
         if(oponenteSelecc.nodeName === "IMG"){
             img__oponente.src = oponenteSelecc.src
             nombre__oponente.textContent = "THANOS"
             img__oponente.classList.remove("displaynone")
             nombre__oponente.classList.remove("displaynone")
+            
 
             //si no, añadira un oponente aleatorio quitando al avatar
             //que haya elegido el jugador

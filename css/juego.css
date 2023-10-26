@@ -1,4 +1,5 @@
 .juego{
+    position: relative;
     background-color: #ffffff;
     margin: 20px 0px;
     border-radius: 10px;
@@ -7,20 +8,26 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
+    padding: 0px 0px 20px;
 }
 .img__oponente{
-    width: 150px;
+    width: 100px;
+}
+.oponente__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .vidas__h3{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: arco;
     color: #8247B1;
 }
 .heart__vidas1,
 .heart__vidas2,
 .heart__vidas3{
-    font-size: 60px;
+    font-size: 40px;
     color: #d14334;
 }
 .nombre__oponente{
@@ -28,9 +35,58 @@
     font-family: arco;
     font-size: 2rem;
 }
-.broken__vidas1,
-.broken__vidas2,
-.broken__vidas3{
-    font-size: 60px;
-    color: #000;
+/* BUTTON JUGAR */
+.button__compruebo{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.button__comprobar{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background: none;
+    font-family: arco;
+    font-size: 2rem;
+    border: 2px solid #8247B1;
+    color: #8247B1;
+}
+.button__comprobar:hover{
+    background-color: #8247B1;
+    color: #ffffff;
+}
+
+/* CONTAINER JUEGO */
+.article__preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.question__cont{
+    color: #8247B1;
+    font-family: arco;
+    font-size: 1.7rem;
+}
+.text__question{
+    font-size: 2rem;
+    font-family: robotoRegular;
+}
+.button__answers{
+    border: 1px solid grey;
+    padding: 10px 200px;
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    font-family: robotoRegular;
+    border-radius: 10px;
+    border: 2px solid #8247B1;
+    color: #8247B1;                          
+}
+.button__answers:hover{
+    background-color: #8247B1;
+    color: #ffffff;
 }

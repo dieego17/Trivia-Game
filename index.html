@@ -91,10 +91,13 @@
             </section>
             <section class="juego displaynone" id="juego">
                 <article class="article__vidas">
-                    <div class="div__vidas">
+                    <div class="div__oponente">
                         <h3 class="vidas__h3">OPONENTE</h3>
-                        <p class="nombre__oponente displaynone" id="nombre__oponente"></p>
-                        <img class="img__oponente displaynone" id="img__oponente" src="./assets/images/perfilcolor.png" alt="">
+                        <div class="oponente__container">
+                            <p class="nombre__oponente displaynone" id="nombre__oponente"></p>
+                            <img class="img__oponente displaynone" id="img__oponente" src="./assets/images/perfilcolor.png" alt="">
+                        </div>
+                       
                     </div>
                     <div class="div__vidas">
                         <h3 class="vidas__h3">VIDAS</h3>
@@ -105,9 +108,34 @@
                         </div>
                     </div>
                 </article>
+                <article class="article__preguntas" id="article__preguntas">
+                    <p class="question__cont">
+                        <!-- Aquí va pr la pregunta que va y cuantas le queda
+                        por ejempolo 3/6  -->
+                        Pregunta: 
+                        <span id="question__cont">
+
+                        </span>
+                    </p>
+                    <p class="text__question" id="text__question">
+                        <!-- Aquí van las preguntas -->
+                    </p>
+                    <buttton class="button__answers" id="button__answers0">
+                        <!-- Aquí van las poribles respuestas -->
+                    </buttton>
+                    <buttton class="button__answers" id="button__answers1">
+                        <!-- Aquí van las poribles respuestas -->
+                    </buttton>
+                    <buttton class="button__answers" id="button__answers2">
+                        <!-- Aquí van las poribles respuestas -->
+                    </buttton>
+                    <buttton class="button__answers" id="button__answers3">
+                        <!-- Aquí van las poribles respuestas -->
+                    </buttton>
+                </article>
             </section>
-            <section class="button__juego displaynone" id="button__comprobar">
-                <button class="button__jugar" id="button__comprobar">Comprobar</button>
+            <section class="button__compruebo displaynone" id="button__compruebo">
+                <button class="button__comprobar" id="button__comprobar">Comprobar</button>
             </section>
         </main>
         <footer class="footer" id="footer">
