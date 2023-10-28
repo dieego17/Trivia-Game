@@ -104,6 +104,6 @@
     color: #ffffff;
 }
 .error{
-    background-color: #d14334;
+    border: 5px solid #d14334;
     color: #ffffff;
 }

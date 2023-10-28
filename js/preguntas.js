@@ -4,318 +4,317 @@ const deportes = [
         "Cristiano Ronaldo", 
         "Lionel Messi", 
         "Pelé", 
-        "Diego Maradona"],2], //Pelé
+        "Diego Maradona"],"Pelé"], //Pelé
     ["¿En qué año se celebraron los primeros Juegos Olímpicos modernos?", [
         "1800", 
         "1896", 
         "1924", 
-        "2000"],1], //1896
+        "2000"],"1896"], //1896
     ["¿En qué deporte se utiliza una pista de hielo y se compite en las disciplinas de patinaje individual, parejas y danza?", [
         "Patinaje artístico", 
         "Hockey sobre hielo", 
         "Esquí alpino", 
-        "Bobsleigh"], 0], //Patinaje artístico
+        "Bobsleigh"], "Patinaje artístico"], //Patinaje artístico
     ["¿Quién es el único jugador en la historia de la NBA en promediar un triple-doble durante una temporada completa?", [
         "Michael Jordan", 
         "Kobe Bryant", 
         "LeBron James", 
-        "Oscar Robertson"], 3], //Oscar Robertson
+        "Oscar Robertson"], "Oscar Robertson"], //Oscar Robertson
     ["¿Cuál es el deporte que se juega en un campo de hierba, y los equipos compiten para golpear una pelota de cuero hacia la portería del oponente?", [
         "Cricket", 
         "Hockey sobre césped", 
         "Fútbol australiano", 
-        "Rugby"], 1], //Hockey sobre césped
+        "Rugby"], "Hockey sobre césped"], //Hockey sobre césped
     ["¿En qué deporte se compite en una pista ovalada en una carrera a alta velocidad, y los competidores usan patines con ruedas?", [
         "Patinaje de velocidad", 
         "Ciclismo en pista", 
         "Patinaje artístico sobre ruedas", 
-        "Bobsleigh"], 0], //Patinaje de velocidad
+        "Bobsleigh"], "Patinaje de velocidad"], //Patinaje de velocidad
     [" ¿Cuál es el único país que ha ganado la Copa Mundial de Rugby más de tres veces?", [
         "Nueva Zelanda", 
         "Sudáfrica", 
         "Australia", 
-        "Inglaterra"], 0], //Nueva Zelanda 
+        "Inglaterra"], "Nueva Zelanda"], //Nueva Zelanda 
     [" ¿Quién es el piloto de Fórmula 1 con el récord de más campeonatos mundiales ganados?", [
         "Ayrton Senna", 
         "Lewis Hamilton", 
         "Michael Schumacher", 
-        "Alain Prost"], 1], //Lewis Hamilton
+        "Alain Prost"], "Lewis Hamilton"], //Lewis Hamilton
     [" ¿En qué deporte se utiliza una pelota pequeña llamada 'pelota de jai alai' y se juega en un frontón?", [
         "Pelota vasca", 
         "Squash", 
         "Tenis de mesa", 
-        "Pelota al cesto"], 0], //Pelota vasca
+        "Pelota al cesto"], "Pelota vasca"], //Pelota vasca
     ["¿Cuál es el único país que ha ganado la Copa Mundial de Cricket más de tres veces?", [
         "India", 
         "Australia", 
         "Inglaterra", 
-        "Sudáfrica"], 1] //Australia
+        "Sudáfrica"], "Australia"] //Australia
 ]
-
 //preguntas ciencia
 const ciencia = [
-    ["¿Cuál es el proceso mediante el cual las plantas convierten la luz solar en energía química?"[
+    ["¿Cuál es el proceso mediante el cual las plantas convierten la luz solar en energía química?",[
         "Fotosíntesis",
         "Respiración",
         "Fermentación",
-        "Digestión"], 0], //Fotosíntesis 
-    [" ¿Cuál es el elemento químico más abundante en la corteza terrestre?"[
+        "Digestión"], "Fotosíntesis"], //Fotosíntesis 
+    [" ¿Cuál es el elemento químico más abundante en la corteza terrestre?",[
         "Hierro",
         "Oxígeno",
         "Carbono",
-        "Silicio"], 1], //Oxígeno  
-    [" ¿Cuál es la unidad básica de la materia?"[
+        "Silicio"], "Hierro"], //Oxígeno  
+    [" ¿Cuál es la unidad básica de la materia?",[
         "Átomo",
         "Molécula",
         "Célula",
-        "Electrón"], 0], //Átomo
-    [" ¿Cuál es la fuerza que mantiene a los planetas en órbita alrededor del Sol?"[
+        "Electrón"], "Átomo"], //Átomo
+    [" ¿Cuál es la fuerza que mantiene a los planetas en órbita alrededor del Sol?",[
         "Gravedad",
         "Magnetismo",
         "Fuerza centrífuga",
-        "Electromagnetismo"], 0], //Gravedad 
-    ["¿Cuál es la enzima responsable de descomponer el peróxido de hidrógeno en el cuerpo?"[
+        "Electromagnetismo"], "Gravedad"], //Gravedad 
+    ["¿Cuál es la enzima responsable de descomponer el peróxido de hidrógeno en el cuerpo?",[
         "Lipasa",
         "Catalasa",
         "Amilasa",
-        "Pepsina"], 1], //Catalasa 
-    ["¿Qué gas representa la mayor parte de la atmósfera de la Tierra?"[
+        "Pepsina"], "Catalasa"], //Catalasa 
+    ["¿Qué gas representa la mayor parte de la atmósfera de la Tierra?",[
         "Oxígeno",
-        "Nitrógeno ",
+        "Nitrógeno",
         "Dióxido de carbono",
-        "Hidrógeno"], 1], //Nitrógeno 
-    ["¿Cuál es el proceso de transferencia de calor a través de un medio sólido sin movimiento aparente de ese medio?"[
+        "Hidrógeno"], "Nitrógeno"], //Nitrógeno 
+    ["¿Cuál es el proceso de transferencia de calor a través de un medio sólido sin movimiento aparente de ese medio?",[
         "Conducción",
         "Convección",
         "Radiación",
-        "Evaporación"], 0], //Conducción 
-    ["¿Cuál es la unidad de medida de la corriente eléctrica?"[
+        "Evaporación"], "Conducción"], //Conducción 
+    ["¿Cuál es la unidad de medida de la corriente eléctrica?",[
         "Voltio",
-        "Amperio ",
+        "Amperio",
         "Vatio",
-        "Ohmio"], 1], //Amperio 
-    ["¿Quién desarrolló la teoría de la relatividad?"[
+        "Ohmio"], "Amperio"], //Amperio 
+    ["¿Quién desarrolló la teoría de la relatividad?",[
         "Isaac Newton",
         "Albert Einstein",
         "Galileo Galilei",
-        "Stephen Hawking"], 1], //Albert Einstein
-    ["¿Cuál es el proceso mediante el cual el núcleo de un átomo se divide en dos o más núcleos más pequeños?"[
+        "Stephen Hawking"], "Albert Einstein"], //Albert Einstein
+    ["¿Cuál es el proceso mediante el cual el núcleo de un átomo se divide en dos o más núcleos más pequeños?",[
         "Fusión nuclear",
         "Fisión nuclear",
         "Radiación nuclear",
-        "Desintegración nuclear"], 1] //Fisión nuclear
+        "Desintegración nuclear"], "Fisión nuclear"] //Fisión nuclear
 ]
-
 //preguntas entretenimiento
 const entretenimiento = [
-    ["¿Cuál es la película ganadora del Oscar a la Mejor Película en 1994?"[
+    ["¿Cuál es la película ganadora del Oscar a la Mejor Película en 1994?",[
         "Forrest Gump",
         "Pulp Fiction",
         "El Rey León",
-        "Titanic"], 0], //Forrest Gump
-    ["¿Quién es conocido como el 'Rey del Pop'?"[
+        "Titanic"], "Forrest Gump"], //Forrest Gump
+    ["¿Quién es conocido como el 'Rey del Pop'?",[
         "Elvis Presley",
         "Michael Jackson",
         "Madonna",
-        "Prince"], 1], //Michael Jackson
-    ["En la serie 'Friends', ¿cuál es el trabajo de Chandler Bing?"[
+        "Prince"], "Michael Jackson"], //Michael Jackson
+    ["En la serie 'Friends', ¿cuál es el trabajo de Chandler Bing?",[
         "Médico",
         "Actor",
         "Contador",
-        "Publicista"], 2], //Contador
-    ["¿Qué empresa es conocida por desarrollar el sistema operativo Windows?"[
+        "Publicista"], "Contador"], //Contador
+    ["¿Qué empresa es conocida por desarrollar el sistema operativo Windows?",[
         "Apple",
         "Microsoft",
         "Google",
-        "Amazon"], 1], //Microsoft
-    ["¿Quién es la artista pop conocida como 'Queen of Pop'?"[
+        "Amazon"], "Microsoft"], //Microsoft
+    ["¿Quién es la artista pop conocida como 'Queen of Pop'?",[
         "Britney Spears",
         "Lady Gaga",
         "Madonna",
-        "Beyoncé"], 2], //Madonna
-    ["¿Cuál es la película animada de Disney en la que un león joven se convierte en rey de la sabana?"[
+        "Beyoncé"], "Madonna"], //Madonna
+    ["¿Cuál es la película animada de Disney en la que un león joven se convierte en rey de la sabana?",[
         "Aladdin",
         "Tarzan",
         "El Rey León",
-        "La Sirenita"], 2], //El Rey León
-    ["En la serie 'Stranger Things', ¿cuál es el nombre del mundo paralelo habitado por criaturas monstruosas?"[
+        "La Sirenita"], "El Rey León"], //El Rey León
+    ["En la serie 'Stranger Things', ¿cuál es el nombre del mundo paralelo habitado por criaturas monstruosas?",[
         "Upside Down",
         "The Netherworld",
         "The Abyss",
-        "Dark Dimension"], 0], //Upside Down
-    ["¿Cuál de estos álbumes icónicos de The Beatles fue lanzado en 1967?"[
+        "Dark Dimension"], "Upside Down"], //Upside Down
+    ["¿Cuál de estos álbumes icónicos de The Beatles fue lanzado en 1967?",[
         "'Please Please Me'",
         "'Rubber Soul'",
         "'Abbey Road'",
-        "'Sgt. Pepper's Lonely Hearts Club Band'"], 3], //"Sgt. Pepper's Lonely Hearts Club Band"
-    ["¿Cuál de estos influencers españoles es un conocido gamer y streamer que ha participado en torneos de eSports?"[
+        "'Sgt. Pepper's Lonely Hearts Club Band'"], "'Sgt. Pepper's Lonely Hearts Club Band'"], //"Sgt. Pepper's Lonely Hearts Club Band"
+    ["¿Cuál de estos influencers españoles es un conocido gamer y streamer que ha participado en torneos de eSports?",[
         "Alex Tienda",
         "Kiko Rivera",
         "Ibai Llanos",
-        "Logan G"], 2], //Ibai Llanos
-    ["¿Quién es un popular comediante y presentador español conocido por sus programas de televisión y stand-up comedy?"[
+        "Logan G"], "Ibai Llanos"], //Ibai Llanos
+    ["¿Quién es un popular comediante y presentador español conocido por sus programas de televisión y stand-up comedy?",[
         "David Suárezr",
         "David Broncano",
         "Ter",
-        "Jordi Wild"], 1] //David Broncano
+        "Jordi Wild"], "David Broncano"] //David Broncano
 ]
-
 //preguntas historia
 const historia = [
-    ["¿Quién fue el primer presidente de Estados Unidos?"[
+    ["¿Quién fue el primer presidente de Estados Unidos?",[
         "Thomas Jefferson",
         "Benjamin Franklin",
         "George Washington",
-        "John Adams"], 2], //George Washington
-    ["¿En qué año comenzó la Primera Guerra Mundial?"[
+        "John Adams"], "George Washington"], //George Washington
+    ["¿En qué año comenzó la Primera Guerra Mundial?",[
         "1914",
         "1917",
         "1920",
-        "1939"], 0], //1914 
-    ["¿Cuál de los siguientes imperios existió en América antes de la llegada de Cristóbal Colón?"[
+        "1939"], "1914"], //1914 
+    ["¿Cuál de los siguientes imperios existió en América antes de la llegada de Cristóbal Colón?",[
         "Imperio Romano",
         "Imperio Persa",
         "Imperio Azteca",
-        "Imperio Mongol"], 2], //Imperio Azteca
-    ["¿Quién fue el líder de la Revolución Rusa de 1917?"[
+        "Imperio Mongol"], "Imperio Azteca"], //Imperio Azteca
+    ["¿Quién fue el líder de la Revolución Rusa de 1917?",[
         "Joseph Stalin",
         "Leon Trotsky",
         "Vladimir Lenin",
-        "Mikhail Gorbachev"], 2], //Vladimir Lenin
-    ["¿En qué año se firmó la Declaración de Independencia de los Estados Unidos?"[
+        "Mikhail Gorbachev"], "Vladimir Lenin"], //Vladimir Lenin
+    ["¿En qué año se firmó la Declaración de Independencia de los Estados Unidos?",[
         "1776",
         "1789",
         "1801",
-        "1865"], 0], //1776 
-    ["¿Cuál fue el primer imperio chino?"[
+        "1865"], "1776"], //1776 
+    ["¿Cuál fue el primer imperio chino?",[
         "Imperio Qing",
         "Imperio Han",
         "Imperio Ming",
-        "Imperio Tang"], 1], //Imperio Han
-    ["¿Qué líder político fue conocido como 'El Canciller de Hierro' en la Alemania del siglo XIX"[
-        "Otto von Bismarck ",
+        "Imperio Tang"], "Imperio Han"], //Imperio Han
+    ["¿Qué líder político fue conocido como 'El Canciller de Hierro' en la Alemania del siglo XIX",[
+        "Otto von Bismarck",
         "Friedrich Nietzsche",
         "Karl Marx",
-        "Johann Wolfgang von Goethe"], 0], //Otto von Bismarck 
-    ["¿En qué año se firmó el Tratado de Versalles que puso fin a la Primera Guerra Mundial?"[
+        "Johann Wolfgang von Goethe"], "Otto von Bismarck"], //Otto von Bismarck 
+    ["¿En qué año se firmó el Tratado de Versalles que puso fin a la Primera Guerra Mundial?",[
         "1919",
         "1921",
         "1935",
-        "1945"], 0], //1919 
-    ["¿Quién fue el faraón más famoso del Antiguo Egipto que construyó las pirámides de Giza?"[
+        "1945"], "1919"], //1919 
+    ["¿Quién fue el faraón más famoso del Antiguo Egipto que construyó las pirámides de Giza?",[
         "Ramsés II",
         "Tutankamón",
         "Cleopatra",
-        "Keops"], 3], //Keops 
-    ["¿En qué año se llevó a cabo la Revolución Francesa?"[
+        "Keops"], "Keops"], //Keops 
+    ["¿En qué año se llevó a cabo la Revolución Francesa?",[
         "1776",
         "1789",
         "1804",
-        "1820"], 1]//1789 
+        "1820"], "1789"]//1789 
 ]
+//preguntas geografia
 const geografia = [
-    ["¿Cuál es el río más largo del mundo?"[
+    ["¿Cuál es el río más largo del mundo?",[
         "Amazonas",
         "Nilo",
         "Misisipi",
-        "Danubio"], 1],//Nilo 
-    ["¿Cuál es el país más grande del mundo en términos de superficie?"[
+        "Danubio"], "Nilo"],//Nilo 
+    ["¿Cuál es el país más grande del mundo en términos de superficie?",[
         "Estados Unidos",
         "China",
         "Rusia",
-        "Canadá"], 2],//Rusia 
-    ["¿En qué continente se encuentra el desierto del Sahara?"[
+        "Canadá"], "Rusia"],//Rusia 
+    ["¿En qué continente se encuentra el desierto del Sahara?",[
         "África",
         "Asia",
         "América del Norte",
-        "Europa"], 0],//África
-    [" ¿Cuál es la capital de Australia?"[
+        "Europa"], "África"],//África
+    [" ¿Cuál es la capital de Australia?",[
         "Sídney",
         "Melbourne",
         "Canberra",
-        "Brisbane"], 2],//Canberra 
-    ["¿Qué cordillera de montañas se extiende a lo largo de la costa oeste de Sudamérica?"[
+        "Brisbane"], "Canberra"],//Canberra 
+    ["¿Qué cordillera de montañas se extiende a lo largo de la costa oeste de Sudamérica?",[
         "Montañas Rocosas",
         "Montañas de los Andes",
         "Montañas de los Apeninos",
-        "Montañas de los Cárpatos"], 1],//Montañas de los Andes 
-    [" ¿Cuál es el país más pequeño del mundo por superficie?"[
+        "Montañas de los Cárpatos"], "Montañas de los Andes"],//Montañas de los Andes 
+    [" ¿Cuál es el país más pequeño del mundo por superficie?",[
         "Rusia",
         "Estados Unidos",
         "Mónaco",
-        "Vaticano"], 3],//Vaticano
-    ["¿Qué país se encuentra en la península de los Balcanes?"[
+        "Vaticano"], "Vaticano"],//Vaticano
+    ["¿Qué país se encuentra en la península de los Balcanes?",[
         "Italia",
         "Grecia",
         "Noruega",
-        "Irlanda"], 1],//Grecia 
-    ["¿Cuál es el punto más alto de la Tierra, ubicado en la cordillera del Himalaya?"[
+        "Irlanda"], "Grecia"],//Grecia 
+    ["¿Cuál es el punto más alto de la Tierra, ubicado en la cordillera del Himalaya?",[
         "Mont Blanc",
         "Kilimanjaro",
         "Monte Everest",
-        "Montaña Denali"], 2],//Monte Everest 
-    [" ¿Cuál es el lago más grande de África?"[
+        "Montaña Denali"], "Monte Everest"],//Monte Everest 
+    [" ¿Cuál es el lago más grande de África?",[
         "Lago Victoria",
         "Lago Tanganica",
         "Lago Malawi",
-        "Lago Chad"], 0],//Lago Victoria 
-    ["¿En qué país se encuentra el famoso monumento Stonehenge?"[
+        "Lago Chad"], "Lago Victoria"],//Lago Victoria 
+    ["¿En qué país se encuentra el famoso monumento Stonehenge?",[
         "Francia",
         "Inglaterra",
         "Escocia",
-        "Irlanda"], 1]//Inglaterra 
+        "Irlanda"], "Inglaterra"]//Inglaterra 
 ]
+//preguntas arte
 const arte = [
-    ["¿Quién pintó la 'Mona Lisa'?"[
+    ["¿Quién pintó la 'Mona Lisa'?",[
         "Pablo Picasso",
         "Vincent van Gogh",
         "Leonardo da Vinci",
-        "Michelangelo Buonarroti"], 3],//Michelangelo Buonarroti
-    ["¿Qué famoso escultor creó la estatua 'El Pensador'?"[
+        "Michelangelo Buonarroti"], "Michelangelo Buonarroti"],//Michelangelo Buonarroti
+    ["¿Qué famoso escultor creó la estatua 'El Pensador'?",[
         "Auguste Rodin",
         "Pablo Picasso",
         "Salvador Dalí",
-        "Vincent van Gogh"], 0],//Auguste Rodin
-    ["¿Qué movimiento artístico se caracteriza por la representación de la realidad en un estilo detallado y preciso?"[
+        "Vincent van Gogh"], "Auguste Rodin"],//Auguste Rodin
+    ["¿Qué movimiento artístico se caracteriza por la representación de la realidad en un estilo detallado y preciso?",[
         "Impresionismo",
         "Realismo",
         "Cubismo",
-        "Surrealismo"], 1],//Realismo 
-    [" ¿Cuál de estos artistas es conocido por sus 'pinturas del sueño'?"[
+        "Surrealismo"], "Realismo"],//Realismo 
+    ["¿Cuál de estos artistas es conocido por sus 'pinturas del sueño'?",[
         "Vincent van Gogh",
         "Salvador Dalí",
         "Pablo Picasso",
-        "Claude Monet"], 1],//Salvador Dalí 
-    ["¿Quién pintó la famosa obra 'Noche estrellada'?"[
+        "Claude Monet"], "Salvador Dalí"],//Salvador Dalí 
+    ["¿Quién pintó la famosa obra 'Noche estrellada'?",[
         "Pablo Picasso",
         "Leonardo da Vinci",
         "Vincent van Gogh",
-        "Michelangelo Buonarroti"], 2],//Vincent van Gogh
-    ["¿Qué movimiento artístico se caracteriza por el uso de formas geométricas y colores vivos?"[
+        "Michelangelo Buonarroti"], "Vincent van Gogh"],//Vincent van Gogh
+    ["¿Qué movimiento artístico se caracteriza por el uso de formas geométricas y colores vivos?",[
         "Barroco",
-        "Cubismo ",
+        "Cubismo",
         "Renacimiento",
-        "Romanticismo"], 1],//Cubismo 
-    ["¿Cuál de los siguientes artistas es conocido por sus pinturas de lirios y nenúfares?"[
+        "Romanticismo"], "Cubismo"],//Cubismo 
+    ["¿Cuál de los siguientes artistas es conocido por sus pinturas de lirios y nenúfares?",[
         "Claude Monet",
         "Jackson Pollock",
         "Andy Warhol",
-        " Pablo Picasso"], 0],//Claude Monet
-    ["¿Qué famoso muralista mexicano pintó el ciclo de murales en el Palacio de Bellas Artes?"[
+        " Pablo Picasso"], "Claude Monet"],//Claude Monet
+    ["¿Qué famoso muralista mexicano pintó el ciclo de murales en el Palacio de Bellas Artes?",[
         "Diego Rivera",
         "Frida Kahlo",
         "David Alfaro Siqueiros",
-        "Rufino Tamayo"], 0],//Diego Rivera
-    ["¿Qué famoso pintor neerlandés es conocido por sus autorretratos?"[
+        "Rufino Tamayo"], "Diego Rivera"],//Diego Rivera
+    ["¿Qué famoso pintor neerlandés es conocido por sus autorretratos?",[
         "Rembrandt van Rijn",
         "Johannes Vermeer",
         "Hieronymus Bosch",
-        "Jan van Eyck"], 0],//Rembrandt van Rijn
-    ["¿Cuál de estos movimientos artísticos se centró en la representación de la vida cotidiana y escenas de la clase trabajadora?"[
+        "Jan van Eyck"], "Rembrandt van Rijn"],//Rembrandt van Rijn
+    ["¿Cuál de estos movimientos artísticos se centró en la representación de la vida cotidiana y escenas de la clase trabajadora?",[
         "Rococó",
         "Romántico",
         "Realismo socialista",
-        "Impresionismo "], 3]//Impresionismo 
+        "Impresionismo"], "Impresionismo"]//Impresionismo 
 ]
 const text__question = document.getElementById("text__question")
 const button__answers0 = document.getElementById("button__answers0")
@@ -323,31 +322,68 @@ const button__answers1 = document.getElementById("button__answers1")
 const button__answers2 = document.getElementById("button__answers2")
 const button__answers3 = document.getElementById("button__answers3")
 const button__comprobar = document.getElementById("button__comprobar")
+const article__preguntas = document.getElementById("article__preguntas")
 
-//nos devuelve la pregunta segun el numero que pongamos
-/* console.log(deportes[0]) */
-
-//nos devuelve el array con todas las preguntas
-/* console.log(deportes[1][1]) */
-
-//nos devuelve segun la respuesta que escojamos en el ultimo numero
-/* console.log(deportes[1][1][0]) */
-
-//nos devuelve un numero que es la posicion de la respuesta correcta
-/* console.log(deportes[1][2]) */
+const question__cont = document.getElementById("question__cont")
 
 
-let preguntaAle = Math.floor(Math.random()*deportes.length)
+let contador = 1;
+question__cont.textContent = contador
 
-//asi mostramos en un array la pregunta que salio de forma aleatoria,
-//las respuestas y la respuesta correcta
-console.log(deportes[preguntaAle])
+//declaramos un array con todas las categorias para sacarlas de manera aleatoria
+const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
+const preguntasAle = Math.floor(Math.random() * categorias.length);
+const preguntasCategoria = categorias[preguntasAle];
+//mostramos por consola el las preguntas de la categoria sacada de manera aleatoria
+console.log(preguntasCategoria)
 
-//aádimos la pregunta que salio de forma aleatoria al juego
-text__question.textContent = deportes[preguntaAle][0]
 
-//estamos mostrando pregunta de manera aleatoria
-console.log(deportes[preguntaAle][0])
+//escogemos una pregunta de manera aleatoria sacada de esa categoria
+let preguntaAleatoria = Math.floor(Math.random()*preguntasCategoria.length)
+console.log(preguntasCategoria[preguntaAleatoria])
 
-//mostramos asi el array de las respuestas
-console.log(deportes[preguntaAle][1])
+//ponemos la pregunta por pantalla
+text__question.textContent = preguntasCategoria[preguntaAleatoria][0]
+console.log( preguntasCategoria[preguntaAleatoria][0])
+
+//ponemos las respuestas por pantalla
+button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0]
+button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1]
+button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2]
+button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3] 
+
+
+
+//evento donde seleccionamos la respuesta que creemos ser correcta
+let optionSelect = null
+let optionComprobar
+const selectOption = (event) =>{
+    let element = event.target;
+    if(element.nodeName === "BUTTON"){
+        optionComprobar = element
+        if(optionSelect){
+            optionSelect.classList.remove("comprobar")
+        }
+        element.classList.add("comprobar")
+        optionSelect = element;
+    }
+}
+
+article__preguntas.addEventListener("click", selectOption)
+
+//evento para comprobar la respuesta seleccionada
+const findOut = (event) =>{
+
+    if(optionComprobar.textContent === preguntasCategoria[preguntaAleatoria][2]){
+        optionComprobar.classList.remove("comprobar")
+        optionComprobar.classList.add("acierto")
+        contador++;
+        question__cont.textContent = contador
+
+    }else{
+        optionComprobar.classList.add("error")
+    }
+
+}
+
+button__comprobar.addEventListener("click", findOut)  
