@@ -107,3 +107,8 @@
     border: 5px solid #d14334;
     color: #ffffff;
 }
+
+/* img pregunta */
+.img__pregunta{
+    width: 500px;
+}

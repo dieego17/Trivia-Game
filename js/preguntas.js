@@ -4,52 +4,62 @@ const deportes = [
         "Cristiano Ronaldo", 
         "Lionel Messi", 
         "Pelé", 
-        "Diego Maradona"],"Pelé"], //Pelé
+        "Diego Maradona"],"Pelé", 
+        "deportes/goleador_mundial"], //Pelé
     ["¿En qué año se celebraron los primeros Juegos Olímpicos modernos?", [
         "1800", 
         "1896", 
         "1924", 
-        "2000"],"1896"], //1896
+        "2000"],"1896",
+    "deportes/juegos_olimpicos"], //1896
     ["¿En qué deporte se utiliza una pista de hielo y se compite en las disciplinas de patinaje individual, parejas y danza?", [
         "Patinaje artístico", 
         "Hockey sobre hielo", 
         "Esquí alpino", 
-        "Bobsleigh"], "Patinaje artístico"], //Patinaje artístico
+        "Bobsleigh"], "Patinaje artístico",
+    "deportes/patinaje_artistico"], //Patinaje artístico
     ["¿Quién es el único jugador en la historia de la NBA en promediar un triple-doble durante una temporada completa?", [
         "Michael Jordan", 
         "Kobe Bryant", 
         "LeBron James", 
-        "Oscar Robertson"], "Oscar Robertson"], //Oscar Robertson
+        "Oscar Robertson"], "Oscar Robertson",
+    "deportes/nba"], //Oscar Robertson
     ["¿Cuál es el deporte que se juega en un campo de hierba, y los equipos compiten para golpear una pelota de cuero hacia la portería del oponente?", [
         "Cricket", 
         "Hockey sobre césped", 
         "Fútbol australiano", 
-        "Rugby"], "Hockey sobre césped"], //Hockey sobre césped
+        "Rugby"], "Hockey sobre césped",
+        "deportes/hockey_cesped"], //Hockey sobre césped
     ["¿En qué deporte se compite en una pista ovalada en una carrera a alta velocidad, y los competidores usan patines con ruedas?", [
         "Patinaje de velocidad", 
         "Ciclismo en pista", 
         "Patinaje artístico sobre ruedas", 
-        "Bobsleigh"], "Patinaje de velocidad"], //Patinaje de velocidad
+        "Bobsleigh"], "Patinaje de velocidad",
+    "deportes/pista_velocidad"], //Patinaje de velocidad
     [" ¿Cuál es el único país que ha ganado la Copa Mundial de Rugby más de tres veces?", [
         "Nueva Zelanda", 
         "Sudáfrica", 
         "Australia", 
-        "Inglaterra"], "Nueva Zelanda"], //Nueva Zelanda 
+        "Inglaterra"], "Nueva Zelanda",
+    "deportes/mundial_rugby"], //Nueva Zelanda 
     [" ¿Quién es el piloto de Fórmula 1 con el récord de más campeonatos mundiales ganados?", [
         "Ayrton Senna", 
         "Lewis Hamilton", 
         "Michael Schumacher", 
-        "Alain Prost"], "Lewis Hamilton"], //Lewis Hamilton
+        "Alain Prost"], "Lewis Hamilton",
+    "deportes/f1_trofeo"], //Lewis Hamilton
     [" ¿En qué deporte se utiliza una pelota pequeña llamada 'pelota de jai alai' y se juega en un frontón?", [
         "Pelota vasca", 
         "Squash", 
         "Tenis de mesa", 
-        "Pelota al cesto"], "Pelota vasca"], //Pelota vasca
+        "Pelota al cesto"], "Pelota vasca",
+    "deportes/pelota_vasca"], //Pelota vasca
     ["¿Cuál es el único país que ha ganado la Copa Mundial de Cricket más de tres veces?", [
         "India", 
         "Australia", 
         "Inglaterra", 
-        "Sudáfrica"], "Australia"] //Australia
+        "Sudáfrica"], "Australia",
+    "deportes/mundial_cricket"] //Australia
 ]
 //preguntas ciencia
 const ciencia = [
@@ -57,52 +67,62 @@ const ciencia = [
         "Fotosíntesis",
         "Respiración",
         "Fermentación",
-        "Digestión"], "Fotosíntesis"], //Fotosíntesis 
+        "Digestión"], "Fotosíntesis",
+    "ciencia/fotosintesis"], //Fotosíntesis 
     [" ¿Cuál es el elemento químico más abundante en la corteza terrestre?",[
         "Hierro",
         "Oxígeno",
         "Carbono",
-        "Silicio"], "Hierro"], //Oxígeno  
+        "Silicio"], "Oxígeno",
+    "ciencia/quimico"], //Oxígeno  
     [" ¿Cuál es la unidad básica de la materia?",[
         "Átomo",
         "Molécula",
         "Célula",
-        "Electrón"], "Átomo"], //Átomo
+        "Electrón"], "Átomo",
+        "ciencia/atomo"], //Átomo
     [" ¿Cuál es la fuerza que mantiene a los planetas en órbita alrededor del Sol?",[
         "Gravedad",
         "Magnetismo",
         "Fuerza centrífuga",
-        "Electromagnetismo"], "Gravedad"], //Gravedad 
+        "Electromagnetismo"], "Gravedad",
+    "ciencia/gravedad"], //Gravedad 
     ["¿Cuál es la enzima responsable de descomponer el peróxido de hidrógeno en el cuerpo?",[
         "Lipasa",
         "Catalasa",
         "Amilasa",
-        "Pepsina"], "Catalasa"], //Catalasa 
+        "Pepsina"], "Catalasa",
+    "ciencia/enzima"], //Catalasa 
     ["¿Qué gas representa la mayor parte de la atmósfera de la Tierra?",[
         "Oxígeno",
         "Nitrógeno",
         "Dióxido de carbono",
-        "Hidrógeno"], "Nitrógeno"], //Nitrógeno 
+        "Hidrógeno"], "Nitrógeno",
+    "ciencia/atmosfera"], //Nitrógeno 
     ["¿Cuál es el proceso de transferencia de calor a través de un medio sólido sin movimiento aparente de ese medio?",[
         "Conducción",
         "Convección",
         "Radiación",
-        "Evaporación"], "Conducción"], //Conducción 
+        "Evaporación"], "Conducción",
+    "ciencia/conduccion"], //Conducción 
     ["¿Cuál es la unidad de medida de la corriente eléctrica?",[
         "Voltio",
         "Amperio",
         "Vatio",
-        "Ohmio"], "Amperio"], //Amperio 
+        "Ohmio"], "Amperio",
+    "ciencia/electricidad"], //Amperio 
     ["¿Quién desarrolló la teoría de la relatividad?",[
         "Isaac Newton",
         "Albert Einstein",
         "Galileo Galilei",
-        "Stephen Hawking"], "Albert Einstein"], //Albert Einstein
+        "Stephen Hawking"], "Albert Einstein",
+    "ciencia/einstein"], //Albert Einstein
     ["¿Cuál es el proceso mediante el cual el núcleo de un átomo se divide en dos o más núcleos más pequeños?",[
         "Fusión nuclear",
         "Fisión nuclear",
         "Radiación nuclear",
-        "Desintegración nuclear"], "Fisión nuclear"] //Fisión nuclear
+        "Desintegración nuclear"], "Fisión nuclear",
+    "ciencia/fision_nuclear"] //Fisión nuclear
 ]
 //preguntas entretenimiento
 const entretenimiento = [
@@ -110,52 +130,62 @@ const entretenimiento = [
         "Forrest Gump",
         "Pulp Fiction",
         "El Rey León",
-        "Titanic"], "Forrest Gump"], //Forrest Gump
+        "Titanic"], "Forrest Gump",
+    "entretenimiento/oscar"], //Forrest Gump
     ["¿Quién es conocido como el 'Rey del Pop'?",[
         "Elvis Presley",
         "Michael Jackson",
         "Madonna",
-        "Prince"], "Michael Jackson"], //Michael Jackson
+        "Prince"], "Michael Jackson",
+    "entretenimiento/michael"], //Michael Jackson
     ["En la serie 'Friends', ¿cuál es el trabajo de Chandler Bing?",[
         "Médico",
         "Actor",
         "Contador",
-        "Publicista"], "Contador"], //Contador
+        "Publicista"], "Contador",
+    "entretenimiento/friends"], //Contador
     ["¿Qué empresa es conocida por desarrollar el sistema operativo Windows?",[
         "Apple",
         "Microsoft",
         "Google",
-        "Amazon"], "Microsoft"], //Microsoft
+        "Amazon"], "Microsoft",
+    "entretenimiento/win"], //Microsoft
     ["¿Quién es la artista pop conocida como 'Queen of Pop'?",[
         "Britney Spears",
         "Lady Gaga",
         "Madonna",
-        "Beyoncé"], "Madonna"], //Madonna
+        "Beyoncé"], "Madonna",
+    "entretenimiento/madonna"], //Madonna
     ["¿Cuál es la película animada de Disney en la que un león joven se convierte en rey de la sabana?",[
         "Aladdin",
         "Tarzan",
         "El Rey León",
-        "La Sirenita"], "El Rey León"], //El Rey León
+        "La Sirenita"], "El Rey León",
+    "entretenimiento/disney"], //El Rey León
     ["En la serie 'Stranger Things', ¿cuál es el nombre del mundo paralelo habitado por criaturas monstruosas?",[
         "Upside Down",
         "The Netherworld",
         "The Abyss",
-        "Dark Dimension"], "Upside Down"], //Upside Down
+        "Dark Dimension"], "Upside Down",
+    "entretenimiento/stranger"], //Upside Down
     ["¿Cuál de estos álbumes icónicos de The Beatles fue lanzado en 1967?",[
         "'Please Please Me'",
         "'Rubber Soul'",
         "'Abbey Road'",
-        "'Sgt. Pepper's Lonely Hearts Club Band'"], "'Sgt. Pepper's Lonely Hearts Club Band'"], //"Sgt. Pepper's Lonely Hearts Club Band"
+        "'Sgt. Pepper's Lonely Hearts Club Band'"], "'Sgt. Pepper's Lonely Hearts Club Band'",
+    "entretenimiento/the_beatles"], //"Sgt. Pepper's Lonely Hearts Club Band"
     ["¿Cuál de estos influencers españoles es un conocido gamer y streamer que ha participado en torneos de eSports?",[
         "Alex Tienda",
         "Kiko Rivera",
         "Ibai Llanos",
-        "Logan G"], "Ibai Llanos"], //Ibai Llanos
+        "Logan G"], "Ibai Llanos",
+    "entretenimiento/twitch"], //Ibai Llanos
     ["¿Quién es un popular comediante y presentador español conocido por sus programas de televisión y stand-up comedy?",[
         "David Suárezr",
         "David Broncano",
         "Ter",
-        "Jordi Wild"], "David Broncano"] //David Broncano
+        "Jordi Wild"], "David Broncano",
+    "entretenimiento/la_resistencia"] //David Broncano
 ]
 //preguntas historia
 const historia = [
@@ -163,52 +193,62 @@ const historia = [
         "Thomas Jefferson",
         "Benjamin Franklin",
         "George Washington",
-        "John Adams"], "George Washington"], //George Washington
+        "John Adams"], "George Washington",
+    "historia/eeuu"], //George Washington
     ["¿En qué año comenzó la Primera Guerra Mundial?",[
         "1914",
         "1917",
         "1920",
-        "1939"], "1914"], //1914 
+        "1939"], "1914",
+    "historia/guerra_mundial"], //1914 
     ["¿Cuál de los siguientes imperios existió en América antes de la llegada de Cristóbal Colón?",[
         "Imperio Romano",
         "Imperio Persa",
         "Imperio Azteca",
-        "Imperio Mongol"], "Imperio Azteca"], //Imperio Azteca
+        "Imperio Mongol"], "Imperio Azteca",
+    "historia/azteca"], //Imperio Azteca
     ["¿Quién fue el líder de la Revolución Rusa de 1917?",[
         "Joseph Stalin",
         "Leon Trotsky",
         "Vladimir Lenin",
-        "Mikhail Gorbachev"], "Vladimir Lenin"], //Vladimir Lenin
+        "Mikhail Gorbachev"], "Vladimir Lenin",
+    "historia/lenin"], //Vladimir Lenin
     ["¿En qué año se firmó la Declaración de Independencia de los Estados Unidos?",[
         "1776",
         "1789",
         "1801",
-        "1865"], "1776"], //1776 
+        "1865"], "1776",
+    "historia/independencia_eeuu"], //1776 
     ["¿Cuál fue el primer imperio chino?",[
         "Imperio Qing",
         "Imperio Han",
         "Imperio Ming",
-        "Imperio Tang"], "Imperio Han"], //Imperio Han
+        "Imperio Tang"], "Imperio Han",
+    "historia/chino"], //Imperio Han
     ["¿Qué líder político fue conocido como 'El Canciller de Hierro' en la Alemania del siglo XIX",[
         "Otto von Bismarck",
         "Friedrich Nietzsche",
         "Karl Marx",
-        "Johann Wolfgang von Goethe"], "Otto von Bismarck"], //Otto von Bismarck 
+        "Johann Wolfgang von Goethe"], "Otto von Bismarck",
+    "historia/otto"], //Otto von Bismarck 
     ["¿En qué año se firmó el Tratado de Versalles que puso fin a la Primera Guerra Mundial?",[
         "1919",
         "1921",
         "1935",
-        "1945"], "1919"], //1919 
+        "1945"], "1919",
+    "historia/versalles"], //1919 
     ["¿Quién fue el faraón más famoso del Antiguo Egipto que construyó las pirámides de Giza?",[
         "Ramsés II",
         "Tutankamón",
         "Cleopatra",
-        "Keops"], "Keops"], //Keops 
+        "Keops"], "Keops",
+    "historia/piramides"], //Keops 
     ["¿En qué año se llevó a cabo la Revolución Francesa?",[
         "1776",
         "1789",
         "1804",
-        "1820"], "1789"]//1789 
+        "1820"], "1789",
+    "historia/francesa"]//1789 
 ]
 //preguntas geografia
 const geografia = [
@@ -216,52 +256,62 @@ const geografia = [
         "Amazonas",
         "Nilo",
         "Misisipi",
-        "Danubio"], "Nilo"],//Nilo 
+        "Danubio"], "Nilo",
+    "geografia/rio"],//Nilo 
     ["¿Cuál es el país más grande del mundo en términos de superficie?",[
         "Estados Unidos",
         "China",
         "Rusia",
-        "Canadá"], "Rusia"],//Rusia 
+        "Canadá"], "Rusia",
+    "geografia/rusia"],//Rusia 
     ["¿En qué continente se encuentra el desierto del Sahara?",[
         "África",
         "Asia",
         "América del Norte",
-        "Europa"], "África"],//África
+        "Europa"], "África",
+    "geografia/sahara"],//África
     [" ¿Cuál es la capital de Australia?",[
         "Sídney",
         "Melbourne",
         "Canberra",
-        "Brisbane"], "Canberra"],//Canberra 
+        "Brisbane"], "Canberra",
+    "geografia/australia"],//Canberra 
     ["¿Qué cordillera de montañas se extiende a lo largo de la costa oeste de Sudamérica?",[
         "Montañas Rocosas",
         "Montañas de los Andes",
         "Montañas de los Apeninos",
-        "Montañas de los Cárpatos"], "Montañas de los Andes"],//Montañas de los Andes 
+        "Montañas de los Cárpatos"], "Montañas de los Andes",
+    "geografia/andes"],//Montañas de los Andes 
     [" ¿Cuál es el país más pequeño del mundo por superficie?",[
         "Rusia",
         "Estados Unidos",
         "Mónaco",
-        "Vaticano"], "Vaticano"],//Vaticano
+        "Vaticano"], "Vaticano",
+    "geografia/vaticano"],//Vaticano
     ["¿Qué país se encuentra en la península de los Balcanes?",[
         "Italia",
         "Grecia",
         "Noruega",
-        "Irlanda"], "Grecia"],//Grecia 
+        "Irlanda"], "Grecia",
+    "geografia/balcanes"],//Grecia 
     ["¿Cuál es el punto más alto de la Tierra, ubicado en la cordillera del Himalaya?",[
         "Mont Blanc",
         "Kilimanjaro",
         "Monte Everest",
-        "Montaña Denali"], "Monte Everest"],//Monte Everest 
+        "Montaña Denali"], "Monte Everest",
+    "geografia/everest"],//Monte Everest 
     [" ¿Cuál es el lago más grande de África?",[
         "Lago Victoria",
         "Lago Tanganica",
         "Lago Malawi",
-        "Lago Chad"], "Lago Victoria"],//Lago Victoria 
+        "Lago Chad"], "Lago Victoria",
+    "geografia/vistoria"],//Lago Victoria 
     ["¿En qué país se encuentra el famoso monumento Stonehenge?",[
         "Francia",
         "Inglaterra",
         "Escocia",
-        "Irlanda"], "Inglaterra"]//Inglaterra 
+        "Irlanda"], "Inglaterra",
+    "geografia/Stonehenge"]//Inglaterra 
 ]
 //preguntas arte
 const arte = [
@@ -269,52 +319,62 @@ const arte = [
         "Pablo Picasso",
         "Vincent van Gogh",
         "Leonardo da Vinci",
-        "Michelangelo Buonarroti"], "Michelangelo Buonarroti"],//Michelangelo Buonarroti
+        "Michelangelo Buonarroti"], "Michelangelo Buonarroti",
+    "arte/mona_lisa"],//Michelangelo Buonarroti
     ["¿Qué famoso escultor creó la estatua 'El Pensador'?",[
         "Auguste Rodin",
         "Pablo Picasso",
         "Salvador Dalí",
-        "Vincent van Gogh"], "Auguste Rodin"],//Auguste Rodin
+        "Vincent van Gogh"], "Auguste Rodin",
+    "arte/pensador"],//Auguste Rodin
     ["¿Qué movimiento artístico se caracteriza por la representación de la realidad en un estilo detallado y preciso?",[
         "Impresionismo",
         "Realismo",
         "Cubismo",
-        "Surrealismo"], "Realismo"],//Realismo 
+        "Surrealismo"], "Realismo",
+    "arte/realismo"],//Realismo 
     ["¿Cuál de estos artistas es conocido por sus 'pinturas del sueño'?",[
         "Vincent van Gogh",
         "Salvador Dalí",
         "Pablo Picasso",
-        "Claude Monet"], "Salvador Dalí"],//Salvador Dalí 
+        "Claude Monet"], "Salvador Dalí",
+    "arte/pintura_del_sueño"],//Salvador Dalí 
     ["¿Quién pintó la famosa obra 'Noche estrellada'?",[
         "Pablo Picasso",
         "Leonardo da Vinci",
         "Vincent van Gogh",
-        "Michelangelo Buonarroti"], "Vincent van Gogh"],//Vincent van Gogh
+        "Michelangelo Buonarroti"], "Vincent van Gogh",
+        "arte/la_noche_estrellada"],//Vincent van Gogh
     ["¿Qué movimiento artístico se caracteriza por el uso de formas geométricas y colores vivos?",[
         "Barroco",
         "Cubismo",
         "Renacimiento",
-        "Romanticismo"], "Cubismo"],//Cubismo 
+        "Romanticismo"], "Cubismo",
+    "arte/cubismo"],//Cubismo 
     ["¿Cuál de los siguientes artistas es conocido por sus pinturas de lirios y nenúfares?",[
         "Claude Monet",
         "Jackson Pollock",
         "Andy Warhol",
-        " Pablo Picasso"], "Claude Monet"],//Claude Monet
+        " Pablo Picasso"], "Claude Monet",
+    "arte/monet"],//Claude Monet
     ["¿Qué famoso muralista mexicano pintó el ciclo de murales en el Palacio de Bellas Artes?",[
         "Diego Rivera",
         "Frida Kahlo",
         "David Alfaro Siqueiros",
-        "Rufino Tamayo"], "Diego Rivera"],//Diego Rivera
+        "Rufino Tamayo"], "Diego Rivera",
+    "arte/palacio"],//Diego Rivera
     ["¿Qué famoso pintor neerlandés es conocido por sus autorretratos?",[
         "Rembrandt van Rijn",
         "Johannes Vermeer",
         "Hieronymus Bosch",
-        "Jan van Eyck"], "Rembrandt van Rijn"],//Rembrandt van Rijn
+        "Jan van Eyck"], "Rembrandt van Rijn",
+    "arte/van"],//Rembrandt van Rijn
     ["¿Cuál de estos movimientos artísticos se centró en la representación de la vida cotidiana y escenas de la clase trabajadora?",[
         "Rococó",
         "Romántico",
         "Realismo socialista",
-        "Impresionismo"], "Impresionismo"]//Impresionismo 
+        "Impresionismo"], "Realismo socialista",
+    "arte/social"]//Realismo socialista 
 ]
 const text__question = document.getElementById("text__question")
 const button__answers0 = document.getElementById("button__answers0")
@@ -323,6 +383,7 @@ const button__answers2 = document.getElementById("button__answers2")
 const button__answers3 = document.getElementById("button__answers3")
 const button__comprobar = document.getElementById("button__comprobar")
 const article__preguntas = document.getElementById("article__preguntas")
+const img__pregunta = document.getElementById("img__pregunta")
 
 const question__cont = document.getElementById("question__cont")
 
@@ -335,16 +396,31 @@ const categorias = [deportes, ciencia, entretenimiento, historia, geografia, art
 const preguntasAle = Math.floor(Math.random() * categorias.length);
 const preguntasCategoria = categorias[preguntasAle];
 //mostramos por consola el las preguntas de la categoria sacada de manera aleatoria
-console.log(preguntasCategoria)
+/* console.log(preguntasCategoria) */
 
 
 //escogemos una pregunta de manera aleatoria sacada de esa categoria
 let preguntaAleatoria = Math.floor(Math.random()*preguntasCategoria.length)
-console.log(preguntasCategoria[preguntaAleatoria])
+/* console.log(preguntasCategoria[preguntaAleatoria]) */
 
 //ponemos la pregunta por pantalla
 text__question.textContent = preguntasCategoria[preguntaAleatoria][0]
-console.log( preguntasCategoria[preguntaAleatoria][0])
+
+//saca la pregunta
+console.log( preguntasCategoria[preguntaAleatoria][0]) 
+
+//saca el array de las respuestas
+console.log(preguntasCategoria[preguntaAleatoria][1]) 
+
+//saca la respuesta correcta
+console.log(preguntasCategoria[preguntaAleatoria][2]) 
+
+//escoger respuestas aleatorias
+let respuestasAle = Math.floor(Math.random()*preguntasCategoria[preguntaAleatoria][1].length)
+
+console.log(preguntasCategoria[preguntaAleatoria][1][respuestasAle]) 
+
+img__pregunta.src = "./assets/images/"+preguntasCategoria[preguntaAleatoria][3]+".png"
 
 //ponemos las respuestas por pantalla
 button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0]
@@ -382,8 +458,45 @@ const findOut = (event) =>{
 
     }else{
         optionComprobar.classList.add("error")
+         
     }
 
 }
 
 button__comprobar.addEventListener("click", findOut)  
+
+
+
+// ...
+
+/* //evento para comprobar la respuesta seleccionada
+const findOut = (event) => {
+    if (optionComprobar.textContent === preguntasCategoria[preguntaAleatoria][2]) {
+        optionComprobar.classList.remove("comprobar");
+        optionComprobar.classList.add("acierto");
+        contador++;
+        question__cont.textContent = contador;
+    } else {
+        optionComprobar.classList.remove("comprobar"); // Eliminar la clase "comprobar" de la respuesta anterior
+        optionComprobar.classList.add("error");
+    }
+
+    // Después de comprobar la respuesta, generamos una nueva pregunta aleatoria
+    preguntaAleatoria = Math.floor(Math.random() * preguntasCategoria.length);
+    text__question.textContent = preguntasCategoria[preguntaAleatoria][0];
+    button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0];
+    button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1];
+    button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2];
+    button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3];
+
+    // Limpiamos las clases de las respuestas para la nueva pregunta
+    button__answers0.classList.remove("acierto", "error");
+    button__answers1.classList.remove("acierto", "error");
+    button__answers2.classList.remove("acierto", "error");
+    button__answers3.classList.remove("acierto", "error");
+
+    // Escoger nuevas respuestas aleatorias
+    respuestasAle = Math.floor(Math.random() * preguntasCategoria[preguntaAleatoria][1].length);
+};
+
+button__comprobar.addEventListener("click", findOut); */
