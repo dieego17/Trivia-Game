@@ -44,7 +44,7 @@ body{
 .nombre__h2{
     font-family: arco;
     color: #8247B1;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 0px 30px;
     text-align: center;
 }
@@ -64,7 +64,7 @@ body{
     width: 400px;
     height: 40px;
     color: #8247B1;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: liht;
 }
@@ -89,7 +89,7 @@ body{
     background: none;
     border: 2px solid #8247B1;
     color: #8247B1;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .name__button:hover{
     background-color: #8247B1;
@@ -100,7 +100,7 @@ body{
 .avatar__jugador{
     border-radius: 10px;
     margin: 10px;
-    width: 30%;
+    width: 50%;
     text-align: center;
 }
 .config__avatar{
@@ -111,7 +111,7 @@ body{
     flex-wrap: wrap;
 }
 .config__img{
-    width: 100px;
+    width: 70px;
     padding: 5px 10px;
     transition: transform 0.3s;
 }
@@ -148,4 +148,5 @@ body{
 }
 .error{
     border: 6px solid #d14334;
+    border-radius: 5px;
 }
