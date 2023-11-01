@@ -397,50 +397,44 @@ const button__next = document.getElementById("button__next")
 let contador = 1;
 question__cont.textContent = contador
 
-//declaramos un array con todas las categorias para sacarlas de manera aleatoria
-const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
-const preguntasAle = Math.floor(Math.random() * categorias.length);
-const preguntasCategoria = categorias[preguntasAle];
-//mostramos por consola el las preguntas de la categoria sacada de manera aleatoria
-/* console.log(preguntasCategoria) */
+let errores = 0;
 
-//escogemos una pregunta de manera aleatoria sacada de esa categoria
-let preguntaAleatoria = Math.floor(Math.random()*preguntasCategoria.length)
-/* console.log(preguntasCategoria[preguntaAleatoria]) */
+let preguntasCategoria;
+let preguntaAleatoria;
+function cargarPregunta(){
+    //declaramos un array con todas las categorias para sacarlas de manera aleatoria
+    const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
+    const preguntasAle = Math.floor(Math.random() * categorias.length);
+    preguntasCategoria = categorias[preguntasAle];
 
-//ponemos la pregunta por pantalla
-text__question.textContent = preguntasCategoria[preguntaAleatoria][0]
-//saca la pregunta
-/* console.log( preguntasCategoria[preguntaAleatoria][0]) 
+    //escogemos una pregunta de manera aleatoria sacada de esa categoria
+    preguntaAleatoria = Math.floor(Math.random()*preguntasCategoria.length)
 
-//saca el array de las respuestas
-console.log(preguntasCategoria[preguntaAleatoria][1])  */
+    //ponemos la pregunta por pantalla
+    text__question.textContent = preguntasCategoria[preguntaAleatoria][0]
 
-//saca la respuesta correcta
-console.log(preguntasCategoria[preguntaAleatoria][2]) 
-
-//escoger respuestas aleatorias
-let respuestasAle = Math.floor(Math.random()*preguntasCategoria[preguntaAleatoria][1].length)
-
-/* console.log(preguntasCategoria[preguntaAleatoria][1][respuestasAle])  */
-
-img__pregunta.src = "./assets/images/"+preguntasCategoria[preguntaAleatoria][3]+".png"
-
-//ponemos las respuestas por pantalla
-button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0]
-button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1]
-button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2]
-button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3]
+    //escoger respuestas aleatorias
+    let respuestasAle = Math.floor(Math.random()*preguntasCategoria[preguntaAleatoria][1].length)
 
 
+
+    img__pregunta.src = "./assets/images/"+preguntasCategoria[preguntaAleatoria][3]+".png"
+
+    //ponemos las respuestas por pantalla
+    button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0]
+    button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1]
+    button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2]
+    button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3]
+
+
+}
 
 //evento donde seleccionamos la respuesta que creemos ser correcta
-let optionSelect = null
+let optionSelect = null;
 let optionComprobar
 const selectOption = (event) =>{
     let element = event.target;
     if(element.nodeName === "BUTTON"){
-        optionComprobar = element
         if(optionSelect){
             optionSelect.classList.remove("comprobar")
         }
@@ -452,46 +446,60 @@ const selectOption = (event) =>{
 
 article__preguntas.addEventListener("click", selectOption)
 
+//evento para comprobar la respuesta seleccionada
+const findOut = (event) =>{
+    if (optionSelect.textContent == preguntasCategoria[preguntaAleatoria][2]) {
+        optionSelect.classList.remove("comprobar");
+        optionSelect.classList.add("acierto");
+      } else {
+        optionSelect.classList.remove("comprobar");
+        optionSelect.classList.add("errorpre");
+        errores++
+        console.log(errores)
+        switch (errores) {
+            case 1:
+                heart__vidas3.style.color = "black"
+                break;
+            case 2:
+                heart__vidas2.style.color = "black"
+                break;
+            case 3:
+                heart__vidas1.style.color = "black"
+                break;
+        }
+    }
+    // Permitir al usuario pasar a la siguiente pregunta
+    button__siguientepre.classList.remove("displaynone");
+    button__compruebo.classList.add("displaynone"); 
+    
+}
+
+button__comprobar.addEventListener("click", findOut)
+
 
 //evento para cambiar la pregunta
 const changeQuestion = (event) =>{
-// Restablecer la visibilidad de los botones
+    // Restablecer la opción seleccionada
+    optionSelect = null;
+
+    contador++;
+    // restablecemos los botones
   button__siguientepre.classList.add("displaynone");
   button__compruebo.classList.remove("displaynone");
 
-  // Escoger una nueva categoría aleatoria
-  const preguntasAle = Math.floor(Math.random() * categorias.length);
-  const preguntasCategoria = categorias[preguntasAle];
+  //llamamos a la funcion de cargar preguntas para no repetir código
+  cargarPregunta();
 
-  // Escoger una pregunta diferente de la categoría
-  let nuevaPreguntaAleatoria;
-  do {
-    nuevaPreguntaAleatoria = Math.floor(Math.random() * preguntasCategoria.length);
-  } while (nuevaPreguntaAleatoria === preguntaAleatoria);
-
-  preguntaAleatoria = nuevaPreguntaAleatoria;
-
-
-  // Actualizar la pregunta, respuestas y la imagen
-  text__question.textContent = preguntasCategoria[preguntaAleatoria][0];
-  img__pregunta.src = "./assets/images/" + preguntasCategoria[preguntaAleatoria][3] + ".png";
-  button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0];
-  button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1];
-  button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2];
-  button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3];
-  
-
-  // Eliminar cualquier estilo CSS aplicado previamente
+  // eliminar cualquier estilo 
   button__answers0.classList.remove("acierto", "errorpre");
   button__answers1.classList.remove("acierto", "errorpre");
   button__answers2.classList.remove("acierto", "errorpre");
   button__answers3.classList.remove("acierto", "errorpre");
 
-  // Reiniciar la selección de opción
-  optionSelect = null;
-  contador++;
     question__cont.textContent = contador
-    if(question__cont.textContent === "6"){
+    //cuando llegaamos a 6 preguntas acertadas o no haya habido 3 fallos hace lo 
+    //siguiente
+    if(question__cont.textContent === "7"){
         juego.classList.add("displaynone")
         button__compruebo.classList.add("displaynone")
         button__siguientepre.classList.add("displaynone")
@@ -501,23 +509,5 @@ const changeQuestion = (event) =>{
 
 button__next.addEventListener("click", changeQuestion);
 
-
-//evento para comprobar la respuesta seleccionada
-const findOut = (event) =>{
-
-    if (optionSelect.textContent === preguntasCategoria[preguntaAleatoria][2]) {
-        optionSelect.classList.remove("comprobar");
-        optionSelect.classList.add("acierto");
-    } else if (optionSelect) {
-        optionSelect.classList.remove("comprobar");
-        optionSelect.classList.add("errorpre");
-    }
-    
-    
-    // Permitir al usuario pasar a la siguiente pregunta
-    button__siguientepre.classList.remove("displaynone");
-    button__compruebo.classList.add("displaynone"); 
-    
-}
-
-button__comprobar.addEventListener("click", findOut)
+//llamamos a la funcion cargar pregunta
+cargarPregunta();
