@@ -376,6 +376,7 @@ const arte = [
         "Impresionismo"], "Realismo socialista",
     "arte/social"]//Realismo socialista 
 ]
+
 const text__question = document.getElementById("text__question")
 const button__answers0 = document.getElementById("button__answers0")
 const button__answers1 = document.getElementById("button__answers1")
@@ -394,6 +395,17 @@ const question__cont = document.getElementById("question__cont")
 const button__siguientepre = document.getElementById("button__siguientepre")
 const button__next = document.getElementById("button__next")
 
+//pagina del resultado
+const ganador = document.getElementById("ganador")
+const perdedor = document.getElementById("perdedor")
+const empezar__nuevo = document.getElementById("empezar__nuevo")
+const span__resultado = document.getElementById("span__resultado")
+const img__ganador = document.getElementById("img__ganador");
+const img__perdedor = document.getElementById("img__perdedor");
+
+const button__reiniciar = document.getElementById("button__reiniciar")
+
+
 let contador = 1;
 question__cont.textContent = contador
 
@@ -402,7 +414,7 @@ let errores = 0;
 let preguntasCategoria;
 let preguntaAleatoria;
 function cargarPregunta(){
-    //declaramos un array con todas las categorias para sacarlas de manera aleatoria
+   //declaramos un array con todas las categorias para sacarlas de manera aleatoria
     const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
     const preguntasAle = Math.floor(Math.random() * categorias.length);
     preguntasCategoria = categorias[preguntasAle];
@@ -416,8 +428,6 @@ function cargarPregunta(){
     //escoger respuestas aleatorias
     let respuestasAle = Math.floor(Math.random()*preguntasCategoria[preguntaAleatoria][1].length)
 
-
-
     img__pregunta.src = "./assets/images/"+preguntasCategoria[preguntaAleatoria][3]+".png"
 
     //ponemos las respuestas por pantalla
@@ -425,8 +435,7 @@ function cargarPregunta(){
     button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1]
     button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2]
     button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3]
-
-
+ 
 }
 
 //evento donde seleccionamos la respuesta que creemos ser correcta
@@ -439,8 +448,7 @@ const selectOption = (event) =>{
             optionSelect.classList.remove("comprobar")
         }
         element.classList.add("comprobar")
-        optionSelect = element;
-        
+        optionSelect = element;  
     }
 }
 
@@ -455,7 +463,6 @@ const findOut = (event) =>{
         optionSelect.classList.remove("comprobar");
         optionSelect.classList.add("errorpre");
         errores++
-        console.log(errores)
         switch (errores) {
             case 1:
                 heart__vidas3.style.color = "black"
@@ -471,6 +478,13 @@ const findOut = (event) =>{
     // Permitir al usuario pasar a la siguiente pregunta
     button__siguientepre.classList.remove("displaynone");
     button__compruebo.classList.add("displaynone"); 
+    if(errores===3){
+        juego.classList.add("displaynone")
+        button__compruebo.classList.add("displaynone")
+        button__siguientepre.classList.add("displaynone")
+        perdedor.classList.remove("displaynone")
+        empezar__nuevo.classList.remove("displaynone")
+    }
     
 }
 
@@ -497,17 +511,26 @@ const changeQuestion = (event) =>{
   button__answers3.classList.remove("acierto", "errorpre");
 
     question__cont.textContent = contador
-    //cuando llegaamos a 6 preguntas acertadas o no haya habido 3 fallos hace lo 
-    //siguiente
+
+    //cuando llegaamos a 6 preguntas acertadas hace lo siguiente
     if(question__cont.textContent === "7"){
         juego.classList.add("displaynone")
         button__compruebo.classList.add("displaynone")
         button__siguientepre.classList.add("displaynone")
+        ganador.classList.remove("displaynone")
+        empezar__nuevo.classList.remove("displaynone")
     }
       
 }
 
 button__next.addEventListener("click", changeQuestion);
 
-//llamamos a la funcion cargar pregunta
+//llamamos a la funcion cargar preguntas
 cargarPregunta();
+
+//evento para reiniciar el juego
+button__reiniciar.addEventListener("click", ()=>{
+
+    window.location.reload()
+
+})

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/juego.css">
     <link rel="stylesheet" href="./css/eleccion_preguntas.css">
+    <link rel="stylesheet" href="./css/resultado.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -140,6 +141,27 @@
             </section>
             <section class="button__siguientepre displaynone" id="button__siguientepre">
                 <button class="button__next" id="button__next">SIGUIENTE</button>
+            </section>
+            <section class="ganador displaynone" id="ganador">
+                <h4 class="h4__ganador">HAS GANADO!</h4>
+                <p class="text__result">Has derrotado a 
+                    <span class="span__resultado" id="span__ganador">
+
+                    </span>
+                </p>
+                <img src="" alt="" class="img__result" id="img__ganador">
+            </section>
+            <section class="perdedor displaynone" id="perdedor">
+                <h4 class="h4__perdedor">HAS PERDIDO :(</h4>
+                <p class="text__result">Has perdido contra 
+                    <span class="span__resultado" id="span__perdedor">
+                        
+                    </span>
+                </p>
+                <img src="" alt="" class="img__result" id="img__perdedor">
+            </section>
+            <section class="empezar__nuevo displaynone" id="empezar__nuevo">
+                <button class="button__reiniciar" id="button__reiniciar">Jugar de nuevo</button>
             </section>
         </main>
     </div>

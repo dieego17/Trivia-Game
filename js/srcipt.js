@@ -156,6 +156,10 @@ const validateOponent = (event) =>{
             nombre__oponente.textContent = "THANOS"
             img__oponente.classList.remove("displaynone")
             nombre__oponente.classList.remove("displaynone")
+            span__ganador.textContent = "THANOS"
+            span__perdedor.textContent = "THANOS"
+            img__ganador.src = "./assets/images/thanos2.png.svg"
+            img__perdedor.src = "./assets/images/thanos2.png.svg"
             
 
             //si no, añadira un oponente aleatorio quitando al avatar
@@ -167,6 +171,10 @@ const validateOponent = (event) =>{
                 nombre__oponente.textContent = avatar[oponenteAle]
                 img__oponente.classList.remove("displaynone")
                 nombre__oponente.classList.remove("displaynone")
+                span__ganador.textContent = avatar[oponenteAle]
+                span__perdedor.textContent = avatar[oponenteAle]
+                img__ganador.src = "./assets/images/avatares/"+avatar[oponenteAle]+".png"
+                img__perdedor.src = "./assets/images/avatares/"+avatar[oponenteAle]+".png"
             }
         }
     }
