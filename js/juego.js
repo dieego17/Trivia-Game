@@ -377,6 +377,7 @@ const arte = [
     "arte/social"]//Realismo socialista 
 ]
 
+//lugar donde se ponen las preguntas, respuestas e imagenes
 const text__question = document.getElementById("text__question")
 const button__answers0 = document.getElementById("button__answers0")
 const button__answers1 = document.getElementById("button__answers1")
@@ -386,12 +387,15 @@ const button__comprobar = document.getElementById("button__comprobar")
 const article__preguntas = document.getElementById("article__preguntas")
 const img__pregunta = document.getElementById("img__pregunta")
 
+//vidas que tenemos
 const heart__vidas1 = document.getElementById("heart__vidas1")
 const heart__vidas2 = document.getElementById("heart__vidas2")
 const heart__vidas3 = document.getElementById("heart__vidas3")
 
+//lugar donde se coloca el contador de las preguntas que lleva
 const question__cont = document.getElementById("question__cont")
 
+//botones para cmbiar de pregunta
 const button__siguientepre = document.getElementById("button__siguientepre")
 const button__next = document.getElementById("button__next")
 
@@ -403,40 +407,61 @@ const span__resultado = document.getElementById("span__resultado")
 const img__ganador = document.getElementById("img__ganador");
 const img__perdedor = document.getElementById("img__perdedor");
 
+//boton para reiniciar el juego
 const button__reiniciar = document.getElementById("button__reiniciar")
 
-
+//contador de preguntas
 let contador = 1;
 question__cont.textContent = contador
 
+//contador para saber los errores
 let errores = 0;
+
 
 let preguntasCategoria;
 let preguntaAleatoria;
+let respCorrect
+
+//declaramos un array con todas las categorias para sacarlas de manera aleatoria
+const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
+let categoriasUtilizadas = [];
+
 function cargarPregunta(){
-   //declaramos un array con todas las categorias para sacarlas de manera aleatoria
-    const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
-    const preguntasAle = Math.floor(Math.random() * categorias.length);
-    preguntasCategoria = categorias[preguntasAle];
+   
+    //comprobamos que se elije una categoria aleatoria que no se haya utilizado
+    let categoriaAleatoria;
+    do {
+        categoriaAleatoria = categorias[Math.floor(Math.random() * categorias.length)];
+    } while (categoriasUtilizadas.includes(categoriaAleatoria));
 
-    //escogemos una pregunta de manera aleatoria sacada de esa categoria
-    preguntaAleatoria = Math.floor(Math.random()*preguntasCategoria.length)
+    categoriasUtilizadas.push(categoriaAleatoria);
 
-    //ponemos la pregunta por pantalla
-    text__question.textContent = preguntasCategoria[preguntaAleatoria][0]
+    const preguntasCategoria = categoriaAleatoria;
+    const preguntaAleatoria = Math.floor(Math.random() * preguntasCategoria.length);
 
-    //escoger respuestas aleatorias
-    let respuestasAle = Math.floor(Math.random()*preguntasCategoria[preguntaAleatoria][1].length)
+    // cargo la pregunta, imagen y opciones
+    const pregunta = preguntasCategoria[preguntaAleatoria][0];
+    const imagenes = preguntasCategoria[preguntaAleatoria][3];
+    respCorrect = preguntasCategoria[preguntaAleatoria][2]
+    const opciones = preguntasCategoria[preguntaAleatoria][1];
 
-    img__pregunta.src = "./assets/images/"+preguntasCategoria[preguntaAleatoria][3]+".png"
+    // coloco la pregunta 
+    text__question.textContent = pregunta;
+    // coloco la imagen 
+    img__pregunta.src = "./assets/images/"+imagenes+".png"
 
-    //ponemos las respuestas por pantalla
-    button__answers0.textContent = preguntasCategoria[preguntaAleatoria][1][0]
-    button__answers1.textContent = preguntasCategoria[preguntaAleatoria][1][1]
-    button__answers2.textContent = preguntasCategoria[preguntaAleatoria][1][2]
-    button__answers3.textContent = preguntasCategoria[preguntaAleatoria][1][3]
+    // coloco las opciones en tus botones
+    button__answers0.textContent = opciones[0];
+    button__answers1.textContent = opciones[1];
+    button__answers2.textContent = opciones[2];
+    button__answers3.textContent = opciones[3];
+
+    // restablezco la opción seleccionada
+    optionSelect = null;
+    question__cont.textContent = contador;
  
 }
+
 
 //evento donde seleccionamos la respuesta que creemos ser correcta
 let optionSelect = null;
@@ -454,9 +479,10 @@ const selectOption = (event) =>{
 
 article__preguntas.addEventListener("click", selectOption)
 
+
 //evento para comprobar la respuesta seleccionada
 const findOut = (event) =>{
-    if (optionSelect.textContent == preguntasCategoria[preguntaAleatoria][2]) {
+    if (optionSelect.textContent == respCorrect) {
         optionSelect.classList.remove("comprobar");
         optionSelect.classList.add("acierto");
       } else {
@@ -526,7 +552,7 @@ const changeQuestion = (event) =>{
 button__next.addEventListener("click", changeQuestion);
 
 //llamamos a la funcion cargar preguntas
-cargarPregunta();
+cargarPregunta(); 
 
 //evento para reiniciar el juego
 button__reiniciar.addEventListener("click", ()=>{

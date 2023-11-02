@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Cabecera juego -->
+        <!-- CABECERA JUEGO -->
         <header class="header" id="header">
             <h1 class="header__h1">
                 <span class="header__letra1">Trivial</span>
@@ -90,6 +90,7 @@
             <section class="button__juego displaynone" id="button__juego">
                 <button class="button__jugar" id="button__jugar">Jugar</button>
             </section>
+            <!-- JUEGO -->
             <section class="juego displaynone" id="juego">
                 <article class="article__vidas">
                     <div class="div__oponente">
@@ -109,6 +110,7 @@
                         </div>
                     </div>
                 </article>
+                <!-- AQUÍ VAN LAS PREGUNTAS, RRESPUESTAS E IMAGENES -->
                 <article class="article__preguntas" id="article__preguntas">
                     <p class="question__cont">
                         <!-- Aquí va pr la pregunta que va y cuantas le queda
@@ -136,12 +138,14 @@
                     </button>
                 </article>
             </section>
+            <!-- BOTONES PARA COMPROBAR Y PASAR A LA SIGUIENTE PREGUNTA -->
             <section class="button__compruebo displaynone" id="button__compruebo">
                 <button class="button__comprobar" id="button__comprobar">Comprobar</button>
             </section>
             <section class="button__siguientepre displaynone" id="button__siguientepre">
                 <button class="button__next" id="button__next">SIGUIENTE</button>
             </section>
+            <!-- PÁGINA PARA SABER SI HA GANADO O PERDIDO -->
             <section class="ganador displaynone" id="ganador">
                 <h4 class="h4__ganador">HAS GANADO!</h4>
                 <p class="text__result">Has derrotado a 
@@ -160,12 +164,13 @@
                 </p>
                 <img src="" alt="" class="img__result" id="img__perdedor">
             </section>
+            <!-- BOTÓN PARA REINICIAR -->
             <section class="empezar__nuevo displaynone" id="empezar__nuevo">
                 <button class="button__reiniciar" id="button__reiniciar">Jugar de nuevo</button>
             </section>
         </main>
     </div>
-    <script src="./js/srcipt.js"></script>
-    <script src="./js/preguntas.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/juego.js"></script>
 </body>
 </html>

@@ -41,6 +41,7 @@ let existeName
 let existeAvatar
 
 let nombreSelecc
+
 //escoger nombre
 const selectName = (event) =>{
     
@@ -59,6 +60,7 @@ const selectName = (event) =>{
 name__button.addEventListener("click", selectName)
 
 let avatarSelecc
+
 //escoger avatar
 const selectAvatar = (event) =>{
 
@@ -118,6 +120,7 @@ const loadGame = (event) =>{
 button__pregunta.addEventListener("click", loadGame)
 
 let oponenteSelecc
+
 //seleccionar el oponente contra quien juegas
 const selectOponent = (event) =>{
     let avatarAle = Math.floor(Math.random()*avatar.length);
