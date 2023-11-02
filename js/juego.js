@@ -59,7 +59,68 @@ const deportes = [
         "Australia", 
         "Inglaterra", 
         "Sudáfrica"], "Australia",
-    "deportes/mundial_cricket"] //Australia
+    "deportes/mundial_cricket"], //Australia
+
+    ["¿En qué deporte se utiliza el término 'birdie' para describir un golpe en el que la pelota se coloca en el hoyo en un golpe menos de lo esperado?", [
+        "Golf", 
+        "Tenis", 
+        "Fútbol", 
+        "Natación"],"Golf", 
+        "deportes/golf"], //Golf
+    ["¿Cuál de las siguientes ciudades ha sido sede de los Juegos Olímpicos de Verano en dos ocasiones?", [
+        "Río de Janeiro", 
+        "Los Ángeles", 
+        "Atenas", 
+        "Londres"],"Los Ángeles",
+    "deportes/jjoo"], //Los Ángeles
+    ["¿En qué deporte se utiliza una red baja y se golpea la pelota sobre la red con la mano o el antebrazo?", [
+        "Voleibol", 
+        "Baloncesto", 
+        "Tenis de mesa", 
+        "Rugby"], "Voleibol",
+    "deportes/voleibol"], //Voleibol
+    ["¿Cuál es el deporte que se juega con un guante y una pelota, y se disputa en un diamante con cuatro bases?", [
+        "Boxeo", 
+        "Béisbol", 
+        "Ciclismo", 
+        "Esquí"], "Béisbol",
+    "deportes/beisbol"], //Béisbol
+    ["¿En qué deporte se utiliza una tabla larga con ruedas para descender cuestas a gran velocidad?", [
+        "Patinaje artístico", 
+        "Esnórquel", 
+        "Ciclismo BMX", 
+        "Skateboarding"], "Skateboarding",
+        "deportes/skate"], //Skateboarding
+    ["¿Cuál es el deporte en el que los jugadores compiten para lanzar una flecha hacia un objetivo en forma de diana?", [
+        "Tiro con arco", 
+        "Tiro al blanco", 
+        "Dardos", 
+        "Esgrima"], "Tiro con arco",
+    "deportes/diana"], //Tiro con arco
+    ["¿En qué deporte los equipos compiten para llevar un disco de caucho hacia la portería del oponente utilizando palos de hockey?", [
+        "Béisbol", 
+        "Hockey sobre césped", 
+        "Hockey sobre hielo", 
+        "Polo"], "Hockey sobre hielo",
+    "deportes/hockey_hielo"], //Hockey sobre hielo 
+    ["¿Cuál es el circuito de Fórmula 1 conocido como 'La Meca de la Velocidad' y alberga el Gran Premio de Italia?", [
+        "Circuit de Barcelona-Catalunya", 
+        "Silverstone Circuit", 
+        "Circuit of the Americas", 
+        "Autodromo Nazionale Monza"], "Autodromo Nazionale Monza",
+    "deportes/monza"], //Autodromo Nazionale Monza
+    ["¿Cuál de los siguientes países ha ganado la Copa del Mundo de la FIFA en cinco ocasiones, más que cualquier otro país?", [
+        "Alemania", 
+        "Italia", 
+        "Argentina", 
+        "Brasil"], "Brasil",
+    "deportes/brasil"], //Brasil
+    ["¿Cuál es el equipo de baloncesto de la NBA con más campeonatos ganados en la historia de la liga?", [
+        "Boston Celtics", 
+        "Los Angeles Lakers", 
+        "Chicago Bulls", 
+        "Golden State Warriors"], "Los Angeles Lakers",
+    "deportes/nba_trofeo"] //Los Angeles Lakers
 ]
 //preguntas ciencia
 const ciencia = [
@@ -122,7 +183,67 @@ const ciencia = [
         "Fisión nuclear",
         "Radiación nuclear",
         "Desintegración nuclear"], "Fisión nuclear",
-    "ciencia/fision_nuclear"] //Fisión nuclear
+    "ciencia/fision_nuclear"], //Fisión nuclear
+    ["¿Cuál es el proceso de conversión de glucosa en energía en ausencia de oxígeno?",[
+        "Fermentación",
+        "Fotosíntesis",
+        "Respiración celular",
+        "Gluconeogénesis"], "Fermentación",
+    "ciencia/glucosa"], //Fermentación 
+    ["¿Cuál es el hueso más largo del cuerpo humano?",[
+        "Fémur",
+        "Tibia",
+        "Radio",
+        "Húmero"], "Fémur",
+    "ciencia/femur"], //Fémur   
+    ["¿Cuál es la capa más externa de la Tierra?",[
+        "Núcleo",
+        "Manto",
+        "Corteza terrestre",
+        "Núcleo externo"], "Corteza terrestre",
+        "ciencia/capas"], //Corteza terrestre
+    ["¿Cuál es la hormona responsable de regular el nivel de glucosa en sangre?",[
+        "Insulina",
+        "Adrenalina",
+        "Testosterona",
+        "Progesterona"], "Insulina",
+    "ciencia/insulina"], //Insulina  
+    ["¿Cuál es la partícula subatómica con carga negativa que orbita alrededor del núcleo de un átomo?",[
+        "Protón",
+        "Electrón ",
+        "Neutrón",
+        "Positrón"], "Electrón ",
+    "ciencia/electron"], //Electrón  
+    ["¿Cuál es la molécula de almacenamiento de energía en las células de los seres vivos?",[
+        "ATP (Adenosina trifosfato)",
+        "ADN (Ácido desoxirribonucleico)",
+        "ARN (Ácido ribonucleico)",
+        "Glucosa"], "ATP (Adenosina trifosfato)",
+    "ciencia/adesina"], //ATP (Adenosina trifosfato) 
+    ["¿Cuál es la enfermedad que afecta el sistema nervioso central y se caracteriza por la pérdida de mielina en las fibras nerviosas?",[
+        "Diabetes",
+        "Esclerosis múltiple",
+        "Alzheimer",
+        "Parkinson"], "Esclerosis múltiple",
+    "ciencia/snc"], //Esclerosis múltiple 
+    ["¿Cuál es el proceso de unión de núcleos ligeros para formar un núcleo más pesado, liberando una gran cantidad de energía?",[
+        "Fisión nuclear",
+        "Fusión nuclear",
+        "Desintegración nuclear",
+        "Radiación nuclear"], "Fusión nuclear",
+    "ciencia/fusion_nuclear"], //Fusión nuclear 
+    ["¿Cuál es el planeta más grande del sistema solar?",[
+        "Marte",
+        "Venus",
+        "Júpiter",
+        "Saturno"], "Júpiter",
+    "ciencia/sistema_solar"], //Júpiter
+    ["¿Cuál es el proceso mediante el cual las plantas liberan agua en forma de vapor a través de sus hojas?",[
+        "Fotosíntesis",
+        "Transpiración",
+        "Respiración",
+        "Evaporación"], "Transpiración",
+    "ciencia/plantas_vapor"] //Transpiración 
 ]
 //preguntas entretenimiento
 const entretenimiento = [
@@ -185,7 +306,67 @@ const entretenimiento = [
         "David Broncano",
         "Ter",
         "Jordi Wild"], "David Broncano",
-    "entretenimiento/la_resistencia"] //David Broncano
+    "entretenimiento/la_resistencia"], //David Broncano
+    ["¿Qué banda británica es conocida por su álbum 'The Dark Side of the Moon'?",[
+        "The Rolling Stones",
+        "The Beatles",
+        "Pink Floyd",
+        "Queen"], "Pink Floyd",
+    "entretenimiento/pink"], //Pink Floyd
+    ["¿Cuál de los siguientes músicos es conocido por su apodo 'The Boss'?",[
+        "Elvis Presley",
+        "Bob Dylan",
+        "Bruce Springsteen",
+        "David Bowie"], "Bruce Springsteen",
+    "entretenimiento/bruce"], //Bruce Springsteen
+    ["¿En qué serie de televisión se encuentra el personaje de Tony Stark, también conocido como Iron Man?",[
+        "The Walking Dead",
+        "Daredevil",
+        "The Avengers: Earth's Mightiest Heroes",
+        "Arrow"], "The Avengers: Earth's Mightiest Heroes",
+    "entretenimiento/marvel"], //The Avengers: Earth's Mightiest Heroes
+    ["¿En qué serie de televisión se encuentra el personaje de Sheldon Cooper?",[
+        "The Big Bang Theory",
+        "Modern Family",
+        "How I Met Your Mother",
+        "Friends"], "The Big Bang Theory",
+    "entretenimiento/sheldon"], //The Big Bang Theory
+    ["¿Quién es conocido como 'The King of YouTube' y ha acumulado millones de seguidores con su contenido de video?",[
+        "Elon Musk",
+        "PewDiePie",
+        "Kylie Jenner",
+        "Dwayne 'The Rock' Johnson"], "PewDiePie",
+    "entretenimiento/pew"], //PewDiePie
+    ["¿Cuál de las siguientes redes sociales es conocida por sus videos cortos y virales?",[
+        "Facebook",
+        "Instagram",
+        "TikTok",
+        "LinkedIn"], "TikTok",
+    "entretenimiento/tiktok"], //TikTok
+    ["¿Quién interpretó el papel de Lara Croft en la película 'Tomb Raider'?",[
+        "Angelina Jolie",
+        "Jennifer Lawrence",
+        "Scarlett Johansson",
+        "Gal Gadot"], "Angelina Jolie",
+    "entretenimiento/raider"], //Angelina Jolie
+    ["¿Cuál de las siguientes series de televisión sigue las vidas de los sobrevivientes de un apocalipsis zombie?",[
+        "The Walking Dead",
+        "Game of Thrones",
+        "Stranger Things",
+        "Breaking Bad"], "The Walking Dead",
+    "entretenimiento/walking"], //The Walking Dead
+    ["¿Cuál de los siguientes CEOs es el fundador de SpaceX y Tesla, Inc.?",[
+        "Jeff Bezos",
+        "Mark Zuckerberg",
+        "Elon Musk",
+        "Tim Cook"], "Elon Musk",
+    "entretenimiento/space"], //Elon Musk
+    ["¿Quién es conocido como 'El Rey del Reggaetón' y es famoso por canciones como 'Diles' y 'Sin Contrato'?",[
+        "Wisin",
+        "J Balvin",
+        "Maluma",
+        "Daddy Yankee"], "Daddy Yankee",
+    "entretenimiento/daddy"] //Daddy Yankee
 ]
 //preguntas historia
 const historia = [
@@ -225,7 +406,7 @@ const historia = [
         "Imperio Ming",
         "Imperio Tang"], "Imperio Han",
     "historia/chino"], //Imperio Han
-    ["¿Qué líder político fue conocido como 'El Canciller de Hierro' en la Alemania del siglo XIX",[
+    ["¿Qué líder político fue conocido como 'El Canciller de Hierro' en la Alemania del siglo XIX?",[
         "Otto von Bismarck",
         "Friedrich Nietzsche",
         "Karl Marx",
@@ -248,7 +429,68 @@ const historia = [
         "1789",
         "1804",
         "1820"], "1789",
-    "historia/francesa"]//1789 
+    "historia/francesa"],//1789 
+
+    ["¿Quién fue el líder de la Revolución Cubana que derrocó a Fulgencio Batista en 1959?",[
+        "Ernesto 'Che' Guevara",
+        "Fidel Castro",
+        "Raúl Castro",
+        "Camilo Cienfuegos"], "Fidel Castro",
+    "historia/revolucion_cuba"], //Fidel Castro
+    ["¿Qué evento histórico marcó el inicio de la Segunda Guerra Mundial en Europa?",[
+        "Ataque a Pearl Harbor",
+        "Invasión de Polonia",
+        "Bombardeo de Londres",
+        "Batalla de Stalingrado"], "Invasión de Polonia",
+    "historia/polonia"], //Invasión de Polonia 
+    ["¿Quién fue el emperador romano que supervisó la construcción del Coliseo en Roma?",[
+        "Julio César",
+        "Augusto",
+        "Nerón",
+        "Marco Aurelio"], "Nerón",
+    "historia/coliseo_roma"], //Nerón 
+    ["¿Cuál fue la primera civilización en la historia de la humanidad que se desarrolló en Mesopotamia?",[
+        "Civilización Egipcia",
+        "Civilización China",
+        "Civilización Inca",
+        "Civilización Sumeria"], "Civilización Sumeria",
+    "historia/mesopotamia"], //Civilización Sumeria
+    ["¿Qué líder militar y político lideró el Movimiento de los Derechos Civiles en los Estados Unidos en la década de 1960?",[
+        "Malcolm X",
+        "Martin Luther King Jr.",
+        "Rosa Parks",
+        "Nelson Mandela"], "Martin Luther King Jr.",
+    "historia/luther"], // Martin Luther King Jr. 
+    ["¿Quién fue el rey de Inglaterra que se casó con seis esposas y provocó la separación de la Iglesia de Inglaterra de la Iglesia Católica?",[
+        "Enrique VIII",
+        "Eduardo VI",
+        "María I",
+        "Isabel I"], "Enrique VIII",
+    "historia/enrique"], //Enrique VIII
+    ["¿Cuál fue el nombre del barco en el que Cristóbal Colón zarpó en su primer viaje hacia el Nuevo Mundo en 1492?",[
+        "Santa María",
+        "Pinta",
+        "Niña",
+        "Victoria"], "Santa María",
+    "historia/colon"], //Santa María 
+    ["¿En qué año terminó la Guerra de Secesión en los Estados Unidos?",[
+        "1888",
+        "1871",
+        "1863",
+        "1865"], "1865",
+    "historia/secesion"], //1865 
+    ["¿Cuál de las siguientes civilizaciones antiguas se desarrolló a lo largo del río Nilo?",[
+        "Civilización Maya",
+        "Civilización Inca",
+        "Civilización Egipcia",
+        "Civilización China"], "Civilización Egipcia",
+    "historia/egipcio"], //Civilización Egipcia 
+    ["¿Qué líder militar francés se convirtió en emperador de Francia y gobernó durante el período conocido como el Primer Imperio Francés?",[
+        "Luis XVI",
+        "Napoleón Bonaparte",
+        "Robespierre",
+        "Luis XVIII"], "Napoleón Bonaparte",
+    "historia/napoleon"]//Napoleón Bonaparte 
 ]
 //preguntas geografia
 const geografia = [
@@ -311,7 +553,67 @@ const geografia = [
         "Inglaterra",
         "Escocia",
         "Irlanda"], "Inglaterra",
-    "geografia/Stonehenge"]//Inglaterra 
+    "geografia/Stonehenge"],//Inglaterra 
+    ["¿Cuál es la capital de Japón?",[
+        "Pekín",
+        "Tokio",
+        "Seúl",
+        "Bangkok"], "Tokio",
+    "geografia/japon"],//Tokio 
+    ["¿En qué país se encuentra la Gran Barrera de Coral?",[
+        "Filipinas",
+        "Indonesia",
+        "Tailandia",
+        "Australia"], "Australia",
+    "geografia/barrera_coral"],//Australia 
+    ["¿Cuál es el océano más grande del mundo?",[
+        "Atlántico",
+        "Índico",
+        "Pacífico",
+        "Ártico"], "Pacífico",
+    "geografia/oceanos"],//Pacífico
+    ["¿Cuál es el río que cruza la ciudad de París?",[
+        "Támesis",
+        "Sena",
+        "Danubio",
+        "Rin"], "Sena",
+    "geografia/sena"],//Sena 
+    ["¿Cuál es el río más largo de América del Sur?",[
+        "Río Amazonas",
+        "Río Paraná",
+        "Río Orinoco",
+        "Río Magdalena"], "Río Amazonas",
+    "geografia/amazonas"],//Río Amazonas
+    [" ¿Cuál es el nombre del canal que separa la isla de Gran Bretaña de la isla de Irlanda?",[
+        "Canal de la Mancha",
+        "Canal de Irlanda",
+        "Canal de Bristol",
+        "Canal de Escocia"], "Canal de la Mancha",
+    "geografia/mancha"],//Canal de la Mancha
+    ["¿En qué país se encuentra el río Misisipi?",[
+        "Canadá",
+        "México",
+        "Cuba",
+        "Estados Unidos"], "Estados Unidos",
+    "geografia/misisipi"],//Estados Unidos 
+    ["¿Cuál es la capital de Letonia?",[
+        "Vilna",
+        "Tallin",
+        "Riga",
+        "Jurmala"], "Riga",
+    "geografia/riga"],//Riga 
+    ["¿Cuál es la isla más grande del mundo por superficie?",[
+        "Groenlandia",
+        "Madagascar",
+        "Islandia",
+        "Borneo"], "Groenlandia",
+    "geografia/groenlandia"],//Groenlandia 
+    ["¿Qué país europeo es conocido como 'la tierra de los tulipanes'?",[
+        "Francia",
+        "Países Bajos (Holanda)",
+        "Italia",
+        "España"], "Países Bajos (Holanda)",
+    "geografia/holanda"]//Países Bajos (Holanda) 
 ]
 //preguntas arte
 const arte = [
@@ -374,7 +676,67 @@ const arte = [
         "Romántico",
         "Realismo socialista",
         "Impresionismo"], "Realismo socialista",
-    "arte/social"]//Realismo socialista 
+    "arte/social"],//Realismo socialista 
+    ["¿Qué escultor italiano es conocido por su escultura 'El David' y su pintura de la Capilla Sixtina?",[
+        "Miguel Ángel",
+        "Leonardo da Vinci",
+        "Rafael",
+        "Sandro Botticelli"], "Miguel Ángel",
+    "arte/david"],//Miguel Ángel
+    ["¿Qué movimiento artístico se caracteriza por la representación de escenas cotidianas y la belleza en lo simple?",[
+        "Impresionismo",
+        "Realismo",
+        "Barroco",
+        "Rococó"], "Rococó",
+    "arte/rococo"],//Rococó 
+    ["¿Quién pintó la famosa obra 'El nacimiento de Venus'?",[
+        "Vincent van Gogh",
+        "Leonardo da Vinci",
+        "Sandro Botticelli",
+        "Pablo Picasso"], "Sandro Botticelli",
+    "arte/nacimiento_venus"],//Sandro Botticelli 
+    ["¿Cuál de los siguientes artistas es conocido por sus obras de arte cinético y op art?",[
+        "Jackson Pollock",
+        "Victor Vasarely",
+        "Frida Kahlo",
+        "Marc Chagall"], "Victor Vasarely",
+    "arte/victor"],//Victor Vasarely 
+    ["¿Qué famoso artista estadounidense es conocido por su serie de latas de sopa Campbell?",[
+        "Andy Warhol",
+        "Mark Rothko",
+        "Jackson Pollock",
+        "Keith Haring"], "Andy Warhol",
+        "arte/latas"],//Andy Warhol
+    ["¿Quién es el autor de la famosa pintura 'La última cena'?",[
+        "Rafael",
+        "Miguel Ángel",
+        "Sandro Botticelli",
+        "Leonardo da Vinci"], "Leonardo da Vinci",
+    "arte/ultima_cena"],//Leonardo da Vinci 
+    ["¿Qué artista español es conocido por su estilo abstracto y sus obras como 'Guernica'?",[
+        "Salvador Dalí",
+        "Joan Miró",
+        "Pablo Picasso",
+        "Francisco Goya"], "Pablo Picasso",
+    "arte/guernica"],//Claude Monet
+    ["¿Quién pintó la famosa obra 'El jardín de las delicias'?",[
+        "Vincent van Gogh",
+        "Hieronymus Bosch",
+        "Salvador Dalí",
+        "Pablo Picasso"], "Hieronymus Bosch",
+    "arte/jardin_delicias"],//Hieronymus Bosch
+    ["¿Qué famoso pintor español es conocido por su estilo abstracto y su uso de formas geométricas?",[
+        "Salvador Dalí",
+        "Joan Miró",
+        "Pablo Picasso",
+        "Francisco Goya"], "Joan Miró",
+    "arte/joan_miro"],//Joan Miró
+    ["¿Qué movimiento artístico se caracteriza por el uso de colores vivos, formas geométricas y la representación de la cultura popular?",[
+        "Surrealismo",
+        "Pop Art",
+        "Impresionismo",
+        "Barroco"], "Pop Art",
+    "arte/pop_art"]//Pop Art
 ]
 
 //lugar donde se ponen las preguntas, respuestas e imagenes
@@ -427,7 +789,10 @@ const categorias = [deportes, ciencia, entretenimiento, historia, geografia, art
 let categoriasUtilizadas = [];
 
 function cargarPregunta(){
-   
+    if (categoriasUtilizadas.length === categorias.length) {
+        console.log('Todas las categorías se han utilizado.');
+        return;
+    }
     //comprobamos que se elije una categoria aleatoria que no se haya utilizado
     let categoriaAleatoria;
     do {
