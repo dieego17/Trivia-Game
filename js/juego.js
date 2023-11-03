@@ -850,7 +850,7 @@ const findOut = (event) =>{
     if (optionSelect.textContent == respCorrect) {
         optionSelect.classList.remove("comprobar");
         optionSelect.classList.add("acierto");
-      } else {
+    } else {
         optionSelect.classList.remove("comprobar");
         optionSelect.classList.add("errorpre");
         errores++

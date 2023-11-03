@@ -140,3 +140,9 @@
     background-color: #8247B1;
     color: #ffffff;
 }
+
+.tiempo__juego{
+    font-family: arco;
+    font-size: 2rem;
+    color: #000;
+}

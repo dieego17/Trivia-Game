@@ -153,6 +153,9 @@ const validateOponent = (event) =>{
         juego.classList.remove("displaynone")
         juego.classList.add("displaybock")
         button__compruebo.classList.remove("displaynone")
+        //al pasar a la pginma del juego se activa el temporizador
+        parar_temporizador = setInterval(saludo,1000);
+
         //si escoge a thanos se añadira a thanos en la siguiente pantalla
         if(oponenteSelecc.nodeName === "IMG"){
             img__oponente.src = oponenteSelecc.src
@@ -183,6 +186,24 @@ const validateOponent = (event) =>{
     }
 }
 button__jugar.addEventListener("click", validateOponent)
+
+//temporizador para juego
+const tiempo__juego = document.getElementById("tiempo__juego")
+let parar_temporizador;
+let contador_parada = 45;
+const saludo = ()=>{
+    if(contador_parada > 0){
+        contador_parada --
+        tiempo__juego.textContent = contador_parada;
+    }else{
+        juego.classList.add("displaynone")
+        button__compruebo.classList.add("displaynone")
+        button__siguientepre.classList.add("displaynone")
+        perdedor.classList.remove("displaynone")
+        empezar__nuevo.classList.remove("displaynone")
+        clearInterval(parar_temporizador);
+    }
+}
 
 
   
