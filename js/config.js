@@ -205,7 +205,7 @@ const saludo = ()=>{
     }
 }
 
-
+document.addEventListener("DOMContentLoaded", saludo)
   
 
 
