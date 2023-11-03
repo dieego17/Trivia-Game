@@ -190,7 +190,7 @@ button__jugar.addEventListener("click", validateOponent)
 //temporizador para juego
 const tiempo__juego = document.getElementById("tiempo__juego")
 let parar_temporizador;
-let contador_parada = 45;
+let contador_parada = 60;
 const saludo = ()=>{
     if(contador_parada > 0){
         contador_parada --

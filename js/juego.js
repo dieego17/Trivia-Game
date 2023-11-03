@@ -865,6 +865,17 @@ const findOut = (event) =>{
                 heart__vidas1.style.color = "black"
                 break;
         }
+        // Marcar la respuesta correcta en verde
+        if (button__answers0.textContent === respCorrect) {
+            button__answers0.classList.add("acierto");
+        } else if (button__answers1.textContent === respCorrect) {
+            button__answers1.classList.add("acierto");
+        } else if (button__answers2.textContent === respCorrect) {
+            button__answers2.classList.add("acierto");
+        } else if (button__answers3.textContent === respCorrect) {
+            button__answers3.classList.add("acierto");
+        }
+
     }
     // Permitir al usuario pasar a la siguiente pregunta
     button__siguientepre.classList.remove("displaynone");
