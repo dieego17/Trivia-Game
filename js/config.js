@@ -30,6 +30,8 @@ const eleccion__preguntas = document.getElementById("eleccion__preguntas")
 const button__pregunta = document.getElementById("button__pregunta");
 const button__preguntas = document.getElementById("button__preguntas");
 
+const div__contador = document.getElementById("div__contador")
+
 //juego
 const juego = document.getElementById("juego")
 const img__oponente = document.getElementById("img__oponente")
@@ -153,9 +155,7 @@ const validateOponent = (event) =>{
         juego.classList.remove("displaynone")
         juego.classList.add("displaybock")
         button__compruebo.classList.remove("displaynone")
-        //al pasar a la pginma del juego se activa el temporizador
-        parar_temporizador = setInterval(saludo,1000);
-
+        
         //si escoge a thanos se añadira a thanos en la siguiente pantalla
         if(oponenteSelecc.nodeName === "IMG"){
             img__oponente.src = oponenteSelecc.src
@@ -166,7 +166,8 @@ const validateOponent = (event) =>{
             span__perdedor.textContent = "THANOS"
             img__ganador.src = "./assets/images/thanos2.png.svg"
             img__perdedor.src = "./assets/images/thanos2.png.svg"
-            
+            //al pasar a la pginma del juego se activa el temporizador
+            parar_temporizador = setInterval(saludo,1000);
 
             //si no, añadira un oponente aleatorio quitando al avatar
             //que haya elegido el jugador
@@ -181,6 +182,7 @@ const validateOponent = (event) =>{
                 span__perdedor.textContent = avatar[oponenteAle]
                 img__ganador.src = "./assets/images/avatares/"+avatar[oponenteAle]+".png"
                 img__perdedor.src = "./assets/images/avatares/"+avatar[oponenteAle]+".png"
+                div__contador.classList.add("displaynone")
             }
         }
     }
@@ -202,6 +204,9 @@ const saludo = ()=>{
         perdedor.classList.remove("displaynone")
         empezar__nuevo.classList.remove("displaynone")
         clearInterval(parar_temporizador);
+        if(question__cont.textContent === "7"){
+            perdedor.classList.add("displaynone")
+        }
     }
 }
 
