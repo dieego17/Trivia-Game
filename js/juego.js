@@ -788,6 +788,7 @@ let respCorrect
 const categorias = [deportes, ciencia, entretenimiento, historia, geografia, arte];
 let categoriasUtilizadas = [];
 
+//funcion para cargar la pregunta
 function cargarPregunta(){
     if (categoriasUtilizadas.length === categorias.length) {
         console.log('Todas las categorías se han utilizado.');
@@ -809,6 +810,9 @@ function cargarPregunta(){
     const imagenes = preguntasCategoria[preguntaAleatoria][3];
     respCorrect = preguntasCategoria[preguntaAleatoria][2]
     const opciones = preguntasCategoria[preguntaAleatoria][1];
+
+    
+    //console.log(respCorrect)
 
     // coloco la pregunta 
     text__question.textContent = pregunta;
@@ -865,7 +869,7 @@ const findOut = (event) =>{
                 heart__vidas1.style.color = "black"
                 break;
         }
-        // Marcar la respuesta correcta en verde
+        // marcar la respuesta correcta en verde
         if (button__answers0.textContent === respCorrect) {
             button__answers0.classList.add("acierto");
         } else if (button__answers1.textContent === respCorrect) {
@@ -877,7 +881,7 @@ const findOut = (event) =>{
         }
 
     }
-    // Permitir al usuario pasar a la siguiente pregunta
+    // permitir al usuario pasar a la siguiente pregunta
     button__siguientepre.classList.remove("displaynone");
     button__compruebo.classList.add("displaynone"); 
     if(errores===3){
@@ -895,11 +899,11 @@ button__comprobar.addEventListener("click", findOut)
 
 //evento para cambiar la pregunta
 const changeQuestion = (event) =>{
-    // Restablecer la opción seleccionada
+    // restablecer la opción seleccionada
     optionSelect = null;
 
     contador++;
-    // restablecemos los botones
+    // restablezco los botones
   button__siguientepre.classList.add("displaynone");
   button__compruebo.classList.remove("displaynone");
 

@@ -16,6 +16,8 @@
 }
 body{
     background-image: url(../assets/images/fondomorado.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;  
 }
 .container{
     min-width: 600px;
