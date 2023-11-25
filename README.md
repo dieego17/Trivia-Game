@@ -1,2 +1,3 @@
 # Trivia-Game
-https://dieego17.github.io/Trivia-Game/
+Trivia game, made with HTML, CSS and JS
+
